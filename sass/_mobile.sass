@@ -1,0 +1,295 @@
+//верхняя навигация
+.mobile-top-nav
+	display: none
+	max-width: 430px
+	margin-left: auto
+	margin-right: auto
+	.container
+		width: 360px
+	&-logo
+		text-transform: uppercase
+		color: $grey
+		font-family: "Open Sans"
+		font-size: 45px
+		font-weight: 400
+		letter-spacing: 0.6px
+		line-height: 50px
+		margin-bottom: 16px
+		&:after
+			content: ''
+			width: 297px
+			height: 3px
+			background: $grey
+			position: absolute
+			top: 50px
+			left: 14px
+	img
+		height: 40px
+	&-menu-btn
+		height: 40px
+		margin: 10px 0 0
+		&:hover
+			cursor: pointer
+	&-phone
+		color: $grey
+		background: $yellow		
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 600
+		letter-spacing: 0.4px
+		padding: 4px 8px 4px 8px
+		border-radius: 5px
+		margin: 5px -10px 0
+	a
+		text-decoration: none
+	.col-auto, .col-2, .col-4, .col-10
+		padding: 0
+		text-align: center
+	&-login
+		margin-left: -20px
+	&-search
+		margin-right: -18px
+		&:hover
+			cursor: pointer
+	&-basket:hover
+		cursor: pointer
+	&-howmuch
+		position: absolute
+		color: $grey
+		background: $yellow		
+		font-family: "Open Sans"
+		font-size: 12px
+		font-weight: 600
+		letter-spacing: 0.4px
+		line-height: 11px
+		padding: 3px 1px 2px 2px
+		border-radius: 7px
+		width: 16px
+		top: -6px
+		left: 6px
+	ul
+		display: none
+		list-style: none
+		background: $grey
+		padding: 0 10px
+		margin: 7px -1px 0 -5px
+		border-radius: 5px
+		li			
+			border-top: 1px solid #605a6b
+			&:last-child
+				border-bottom: 1px solid #605a6b
+			&:hover
+				background-color: #605a6b
+			a
+				display: list-item
+				color: #fbfbfb
+				font-family: "PT Sans"
+				font-size: 14px
+				padding-left: 37%
+				line-height: 20px
+				&:hover
+					color: $yellow
+					transition: 0.5s
+	form
+		display: none
+		background: $grey
+		width: 102%
+		margin-left: -5px
+		padding: 0 5px 0 30px
+		margin-top: 7px
+		border-radius: 4px
+		input
+			width: 85%
+			height: 30px
+			border: 1px solid lighten($grey, 55%)
+			outline: none
+			color: $grey
+			padding-left: 15px
+			font-family: "Open Sans"
+			font-size: 14px
+			font-weight: 600
+			letter-spacing: 0.4px
+		button
+			padding: 0px 8px 0 18px
+			top: 4px
+			left: -5px
+			position: relative
+			border: none
+			background: none
+			outline: none
+			&:hover
+				cursor: pointer
+			img
+				height: 20px
+				filter: brightness(5)
+	&-basket-content
+		display: none
+		position: absolute
+		z-index: 1
+		margin-left: 212px
+		top: 117px			
+		background: $white
+		border: 1px solid lighten($grey, 50%)
+		min-width: 150px
+		min-height: 100px
+		padding-bottom: 10px
+		ul
+			display: block
+			list-style: none
+			padding-left: 15px
+			background: $white
+			margin: 12px 0
+			li
+				border: none
+				&:last-child
+					border: none
+				&:hover
+					background: inherit				
+				a
+					color: $black
+					font-family: "PT Sans"
+					font-size: 12px
+					font-weight: 400
+					text-decoration: none
+					padding-left: 0
+					line-height: 16px
+		p				
+			font-family: "PT Sans"
+			font-size: 12px
+			font-weight: 400
+			text-decoration: none
+			padding: 2px 0				
+			background: $grey
+			transition: 0.5s
+			position: absolute
+			bottom: 0px
+			width: 148px
+			&:hover
+				background: lighten($grey, 5%)
+			a
+				text-decoration: none
+				color: $white
+				display: flex
+				padding-left: 15px
+				
+
+//навигация по продукции
+.mobile-production
+	display: none
+	.container
+		width: 335px
+	h1
+		color: $black
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 600
+		letter-spacing: 0.4px
+		text-align: center
+		margin: 12px auto
+		line-height: 20px
+	img
+		width: 140px		
+	.col-6, .col-12
+		padding: 0
+		text-align: center
+		border: 1px solid #000
+		border-left: none
+		border-bottom: none
+		&:first-child
+			border-left: 1px solid #000
+	.col-12
+		border-bottom: 1px solid #000
+	a
+		text-decoration: none
+		color: $grey
+	p		
+		font-family: "Open Sans"
+		text-transform: uppercase
+		font-size: 16px
+		margin-top: -14px
+		margin-bottom: 10px
+
+//слайдер
+.mobile-actions
+	display: none
+	.container
+		max-width: 363px
+		position: relative
+	img
+		width: 100%		
+	h1
+		color: $grey
+		font-family: "PT Sans"
+		font-size: 21px
+		position: relative
+		top: -150px
+		left: 15px
+	p
+		color: $grey
+		font-family: "PT Sans"
+		font-size: 21px
+		position: relative
+		top: -115px
+		left: 15px
+		span
+			text-transform: uppercase
+	h2
+		color: $white
+		background: $grey
+		font-family: "Open Sans"
+		font-size: 20px
+		font-weight: 400
+		text-align: center
+		text-transform: uppercase
+		margin-top: -91px
+		padding: 15px 0 35px
+	.slick-dots
+		bottom: 5px
+	.slick-dots li
+		margin: 0 3px
+	.slick-dots li button
+		height: 16px
+		width: 17px
+		border: 1px solid $white
+		border-radius: 10px				
+	.slick-dots li.slick-active button::before
+		color: $white
+	.slick-dots li button::before
+		color: $grey
+		font-size: 9px
+		line-height: 17px
+		width: 16px
+
+//сведения об оплате и доставке
+.mobile-delivery
+	display: none
+	.container
+		max-width: 320px
+	h1
+		color: $black
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 600
+		letter-spacing: 0.4px
+		text-align: center
+		margin: -20px 0 5px
+	p
+		color: $black
+		font-family: "Open Sans"
+		font-size: 14px
+		font-weight: 400
+		line-height: 22px
+	a
+		text-decoration: none
+		margin-left: 35%
+		display: inline-block
+		margin-top: 10px
+		p
+			float: left
+		img
+			height: 20px
+			margin-left: 9px
+			margin-top: 2px
+	hr
+		height: 1px
+		margin-top: 14px

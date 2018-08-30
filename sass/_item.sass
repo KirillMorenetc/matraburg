@@ -1,0 +1,1125 @@
+//.........страница КАРТОЧКА ТОВАРА.............
+//модальное окно - YouTube
+.review
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(50, 50, 50, 0.5)
+	top: 0
+	left: 0	
+	z-index: 10
+	&-youtube
+		width: 640px
+		height: 360px
+		background-color: $black
+		margin: 0 auto
+		position: relative
+		top: 50%
+		margin-top: -180px
+	span
+		color: darken($white, 7%)
+		font-size: 60px
+		line-height: 30px
+		position: absolute
+		top: 10px
+		right: 8px
+		transform: rotate(45deg)
+		cursor: pointer
+		transition: .5s
+		&:hover
+			color: $white
+//модальное окно - быстрый заказ
+.order-popup
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(50, 50, 50, 0.5)
+	top: 0
+	left: 0	
+	z-index: 10
+	span		
+		position: absolute
+		transform: rotate(45deg)
+		cursor: pointer
+		transition: .5s
+		&:hover
+			color: $white
+	&-window
+		width: 490px
+		height: 600px
+		background-color: $white
+		margin: 0 auto
+		position: relative
+		top: 50%
+		margin-top: -300px
+		span
+			color: $grey
+			font-size: 35px
+			top: 9px
+			right: 14px
+			&:hover
+				color: lighten($grey, 35%)
+		h2
+			font-family: "Open Sans"
+			font-size: 24px
+			font-weight: 700
+			text-align: center
+			line-height: 20px
+			padding-top: 40px
+		p
+			font-family: "PT Sans"
+			font-size: 18px
+			max-width: 380px
+			margin: 0 auto
+			margin-top: 14px
+			margin-bottom: 27px
+			line-height: 20px
+		form
+			margin: 0 auto
+			max-width: 280px
+			label
+				font-family: "PT Sans"
+				font-size: 14px
+				display: block
+				margin-bottom: 8px
+				span
+					transform: none
+			input
+				font-family: "PT Sans"
+				font-size: 14px
+				padding-left: 10px
+				width: 280px
+				height: 40px
+				outline: none
+				border-radius: 4px
+				margin-bottom: 20px
+				transition: 0.5s
+			small
+				color: red
+				font-size: 14px
+			#your-name
+				border: 1px solid $yellow
+				&:focus
+					-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 179, 45, 0.75)
+					-moz-box-shadow:    0px 0px 5px 0px rgba(255, 179, 45, 0.75)
+					box-shadow:         0px 0px 5px 0px rgba(255, 179, 45, 0.75)
+			#your-phone
+				border: 1px solid red
+				&:focus
+					-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.75)
+					-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.75)
+					box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.75)
+			#your-email
+				border: 1px solid #cdcdcd
+				&:focus
+					-webkit-box-shadow: 0px 0px 6px 0px rgba(205, 205, 205, 1)
+					-moz-box-shadow:    0px 0px 6px 0px rgba(205, 205, 205, 1)
+					box-shadow:         0px 0px 6px 0px rgba(205, 205, 205, 1)
+			button
+				width: 220px
+				height: 38px
+				background-color: $yellow
+				outline: none
+				border: none
+				border-radius: 4px
+				color: $black
+				font-family: "PT Sans"
+				font-size: 14px
+				transition: 0.5s
+				margin: 0 auto
+				display: block
+				margin-top: 15px
+				margin-bottom: 18px
+				&:hover					
+					cursor: pointer
+				&:active
+					font-size: 13.5px
+			.yellow-checkbox
+				margin-bottom: -3px
+				p
+					font-family: "PT Sans"
+					font-size: 12px
+					color: $black
+					padding: 0
+					margin-left: -10px
+					top: 7.5px					
+					&:hover
+						cursor: default
+					a
+						color: $black
+
+
+.item
+	background: #f1f1f1
+	padding-top: 35px	
+	padding-left: 10px
+	padding-right: 10px
+	h1
+		color: $black
+		font-family: "Open Sans"
+		font-size: 24px
+		text-align: center
+		margin-top: 15px
+	&-back
+		color: #1b1b1b
+		font-size: 12px
+		font-family: "PT Sans"
+		line-height: 30px
+		text-align: center
+		text-decoration: none
+		position: relative
+		display: inline-block
+		width: 120px
+		height: 31px
+		top: -30px
+		left: 0px
+		z-index: 1
+		background: url(../img/item-back.png) no-repeat
+		background-size: 120px
+		transition: 0.2s
+		&:active
+			font-size: 11.5px
+
+	&-mattressImg
+		position: relative
+		width: 520px
+		height: 450px
+		background: $white
+		border: 1px solid #dcdcdc	
+		.catalog-item-discount
+			width: 66px
+			height: 66px
+			background-size: 66px
+			top: 28px
+			left: 35px
+			font-size: 18px
+			text-align: center
+			line-height: 64px
+			padding: 0
+		.catalog-item-rating
+			width: 130px
+			text-align: right
+			position: absolute
+			right: 30px
+			top: 30px
+			p
+				color: #686868
+				font-family: "PT Sans"
+				font-size: 14px
+				margin-bottom: 5px
+				margin-right: 5px
+				a
+					color: #686868
+					text-decoration: none
+					transition: 0.5s
+					&:hover
+						color: $yellow
+			ul
+				width: 130px
+				height: 20px
+				background-size: 26px
+				.current
+					background-size: 26px
+				li
+					height: 20px
+					span[class*="star"]
+						width: 26px
+						height: 20px
+						&:hover
+							left: 0
+							background-size: 26px
+					span.star1
+						left: 0
+						&:hover
+							width: 26px
+					span.star2
+						left: 26px
+						&:hover
+							width: 52px
+					span.star3
+						left: 52px
+						&:hover
+							width: 78px
+					span.star4
+						left: 78px
+						&:hover
+							width: 104px
+					span.star5
+						left: 104px
+						&:hover
+							width: 130px
+		img
+			margin-top: 125px
+			margin-left: 70px			
+		&-grayBlocks
+			margin-left: 33px
+			margin-top: 60px
+			width: 200px
+		&-grayBlock
+			width: 50px
+			height: 50px
+			background-color: #8a8a8a
+			margin-right: 17px
+			cursor: pointer
+			outline: none
+			&:focus
+				border: 1px solid $yellow				
+		.catalog-item-youtube
+			position: absolute
+			right: 25px
+			bottom: 30px
+
+	&-options
+		width: 520px
+		height: 80px
+		border: 1px solid #dcdcdc
+		background: $white
+		margin-top: 11px
+		.row
+			margin: 0
+			padding-right: 30px
+			margin-top: 28px
+			.col-auto
+				padding: 0
+		a
+			text-decoration: none
+		img			
+			width: 20px
+			float: left
+			margin-right: 6px
+		p
+			color: $black
+			font-family: "PT Sans"
+			font-size: 14px
+			white-space: nowrap
+			margin-top: 2px
+			transition: 0.5s
+			&:hover
+				color: $yellow
+
+	&-quickOrder
+		width: 478px
+		height: 541px
+		border: 1px solid #dcdcdc
+		background: $white
+		margin-left: 11px
+		padding: 31px 33px 0 28px		
+		h3
+			color: $black
+			font-family: "PT Sans"
+			font-size: 14px
+		&-select			
+			select
+				width: 180px
+				height: 29px				
+				outline: none
+				border: 1px solid #bdbdbd
+				border-radius: 4px
+				color: $black
+				font-family: "PT Sans"
+				font-size: 15px
+				appearance: none
+				-webkit-appearance: none
+				-moz-appearance: none
+				padding: 0 25px 0 11px
+				background: url(../img/select-arrow.png) no-repeat
+				background-size: 5px
+				background-position: 92% 50%
+				margin-top: 8px
+				&:hover
+					cursor: pointer
+		.catalog-size-nonstandart
+			font-size: 14px
+			margin-top: 6px
+			margin-bottom: 12px
+		&-city
+			margin-top: 14px
+			select
+				outline: none
+				border: none
+				font-family: "PT Sans"
+				font-size: 14px
+				text-decoration: underline
+				appearance: none
+				-webkit-appearance: none
+				-moz-appearance: none
+				padding-right: 25px
+				background: url(../img/select-arrow.png) no-repeat
+				background-size: 5px
+				background-position: 80% 60%
+				margin-top: 5px				
+				&:hover
+					cursor: pointer
+			p
+				color: $black
+				font-family: "PT Sans"
+				font-size: 14px
+				margin-top: 3px
+		&-oldPrice
+			color: #686868
+			font-family: "PT Sans"
+			font-size: 18px
+			text-decoration: line-through
+			margin-top: -1px
+			position: absolute
+			right: 15px
+		&-price
+			color: $black
+			font-family: "PT Sans"
+			font-size: 36px
+			text-align: right
+			margin-top: 18px
+		span
+			color: #686868
+			font-family: "PT Sans"
+			font-size: 12px
+			text-align: right
+			display: inherit
+			width: 142px
+			position: absolute
+			right: 15px
+		button
+			width: 170px
+			height: 45px
+			background-color: $yellow
+			outline: none
+			border: none
+			border-radius: 4px
+			color: $black
+			font-family: "PT Sans"
+			font-size: 18px
+			position: absolute
+			right: 15px
+			margin-top: 52px
+			transition: 0.2s
+			padding-left: 16px
+			&:hover
+				cursor: pointer
+				background-color: lighten($yellow, 5%)
+			&:active
+				font-size: 17px
+			&:last-child
+				margin-top: 114px
+				border: 1px solid #2c2c2c
+				background: none
+				padding-left: 7px
+			&:last-child:active
+				font-size: 17.5px
+			img
+				width: 20px
+				position: absolute
+				left: 30px
+				top: 13px
+		&-special
+			h4
+				color: #1b1b1b
+				font-family: "PT Sans"
+				font-size: 18px
+				margin-top: 30px
+				margin-bottom: 10px
+			p
+				color: #1b1b1b
+				font-family: "PT Sans"
+				font-size: 14px
+				line-height: 20px
+			a
+				color: $yellow
+				font-family: "PT Sans"
+				font-weight: 700
+				text-transform: uppercase
+				text-decoration: none
+				margin-top: 5px
+				display: inline-block
+			.catalog-item-property
+				margin-top: 25px
+				li					
+					font-size: 12px
+					text-transform: none
+					font-weight: 400
+					&:before
+						margin-bottom: 6px
+						width: 60px
+						height: 60px
+						background: #787878
+						border-radius: 30px
+
+	&-accessories
+		margin-top: 55px		
+		h2
+			color: #1b1b1b
+			font-family: "Open Sans"
+			font-size: 24px
+			text-align: center
+			margin-bottom: 34px
+		&-slider
+			&-block
+				width: 244px
+				height: 144px
+				border: 1px solid #dcdcdc
+				background: $white
+				padding: 16px 20px
+				margin-right: 8px
+				outline: none
+				&:last-child
+					margin-right: 0				
+				.accessories-gray
+					width: 75px
+					height: 75px
+					background: #c4c4c4
+				h3
+					color: #1b1b1b
+					font-family: "PT Sans"
+					font-size: 14px
+					font-weight: 400
+					line-height: 17px
+					width: 115px
+					margin-left: -2px
+				p
+					color: #1b1b1b
+					font-family: "PT Sans"
+					font-size: 14px
+					font-weight: 700
+					position: absolute
+					top: 56px
+					margin-left: -2px
+				button
+					width: 81px
+					height: 21px
+					background-color: $yellow
+					outline: none
+					border: none
+					border-radius: 4px
+					color: $black
+					font-family: "PT Sans"
+					font-size: 12px
+					margin: 16px auto
+					transition: 0.3s
+					&:hover
+						cursor: pointer
+						background-color: lighten($yellow, 5%)
+					&:active
+						font-size: 11.5px
+			.slick-next, .slick-prev
+				margin-right: -45px
+				&:before
+					content: ''
+			.slick-prev
+				margin-left: -50px
+
+	&-tabs
+		width: 100%
+		padding: 0px
+		margin: 0 auto
+		margin-top: 63px
+		input
+			display: none
+			&:checked + label
+				color: $grey
+				border: 1px solid #dcdcdc
+				border-bottom: 1px solid #FFFFFF
+				background: #FFFFFF
+		&-block
+			display: none
+			padding: 40px 50px
+			border: 1px solid #dcdcdc
+			background: $white			
+			p, b
+				color: #1b1b1b
+				font-family: "PT Sans"
+				font-size: 14px
+				line-height: 18px
+
+		label
+			display: inline-block
+			padding: 10px
+			font-family: "PT Sans"
+			font-size: 18px
+			text-align: center
+			color: $white
+			border: 1px solid #dcdcdc
+			border-bottom: none
+			background: $grey
+			cursor: pointer
+			width: 195px
+			height: 45px
+			border-radius: 5px 5px 0 0
+			margin-left: 5.260px
+			margin-bottom: -1px
+			
+		#tab_1:checked ~ #tab_description,
+		#tab_2:checked ~ #tab_properties,
+		#tab_3:checked ~ #tab_feedbacks,
+		#tab_4:checked ~ #tab_where,
+		#tab_5:checked ~ #tab_q-a,
+			display: block
+
+		h3
+			color: #1b1b1b
+			font-family: "PT Sans"
+			font-size: 18px
+
+		#tab_properties
+			.ul-contents
+				padding-left: 18px
+				margin-bottom: 25px
+				li
+					color: $grey
+					font-size: 19px
+					margin-bottom: 8px
+					width: 360px
+			.ul-materials
+				padding-left: 18px
+				margin-bottom: 0
+				li
+					color: $grey
+					font-size: 19px
+					margin-bottom: 8px
+					a
+						color: #1b1b1b
+						font-family: "PT Sans"
+						font-size: 14px
+			.ul-properties
+				list-style: none
+				padding: 0
+				li
+					color: #1b1b1b
+					font-family: "PT Sans"
+					font-size: 14px
+					padding: 7px 0 7px 18px
+					&:nth-child(2n+1)
+						background: #dcdcdc
+					span
+						position: absolute
+						right: 32px
+
+		#tab_feedbacks
+			padding-top: 50px
+			padding-left: 30px
+			padding-right: 60px
+			.catalog-item-rating
+				ul
+					float: left
+					margin-top: 1px
+					margin-right: 15px
+					width: 85px
+					height: 13px
+					background-size: 17px
+				.current
+					background-size: 17px
+				li
+					height: 13px
+					span[class*="star"]
+						width: 17px
+						height: 13px
+						&:hover
+							cursor: default
+							left: 0
+							background-size: 17px
+					span.star1
+						left: 0
+						&:hover
+							width: 17px
+					span.star2
+						left: 17px
+						&:hover
+							width: 34px
+					span.star3
+						left: 34px
+						&:hover
+							width: 51px
+					span.star4
+						left: 51px
+						&:hover
+							width: 68px
+					span.star5
+						left: 68px
+						&:hover
+							width: 85px			
+			
+			.feedback-text	
+				line-height: 22px
+				margin-top: 23px
+			hr
+				background: #dcdcdc
+				margin-top: 40px
+				margin-bottom: 35px
+			.feedback-rating
+				width: 165px
+				height: 103px
+				background-color: #f1f1f1
+				padding-top: 15px
+				margin-top: -3px
+				margin-bottom: 33px
+				h3
+					color: #1b1b1b
+					font-family: "PT Sans"
+					font-size: 24px
+					font-weight: 400
+					text-align: center
+					margin-bottom: 1px
+				p
+					color: #686868
+					font-family: "PT Sans"
+					font-size: 12px
+					text-align: center
+					margin-top: 7px
+					span
+						color: $black
+				.catalog-item-rating
+					ul
+						float: none
+						margin: 0 auto
+			.feedback-line
+				background: url(../img/rating-star.png) no-repeat
+				background-size: 17px
+				background-position: 9% 157%
+				color: #1b1b1b
+				font-family: "PT Sans"
+				font-size: 14px
+				width: 165px
+				padding-left: 2px				
+				margin-bottom: 13px
+				span[id*="line_"]
+					display: inline-block
+					width: 100px
+					height: 4px
+					background: url(../img/rating-line.png) no-repeat
+					background-position-x: 100%
+					margin-bottom: 2px
+					margin-left: 27px
+					margin-right: 9px
+				span[id*="voices_"]
+					width: 15px
+					display: inline-block
+					text-align: center
+			.row
+				button
+					width: 165px
+					height: 39px
+					background-color: $yellow
+					outline: none
+					border: none
+					border-radius: 4px
+					color: $black
+					font-family: "PT Sans"
+					font-size: 14px
+					margin: 16px auto
+					transition: 0.3s
+					&:hover
+						cursor: pointer
+						background-color: lighten($yellow, 5%)
+					&:active
+						font-size: 13.5px
+			button
+				width: 223px
+				height: 39px
+				background-color: $white
+				outline: none
+				border: 1px solid #dcdcdc
+				border-radius: 4px
+				color: $black
+				font-family: "PT Sans"
+				font-size: 14px
+				margin: 0 auto
+				transition: 0.3s
+				display: block
+				margin-top: -30px
+				position: relative
+				&:hover
+					cursor: pointer
+					background-color: darken($white, 3%)
+				&:active
+					font-size: 13.7px
+		.name
+					color: #686868
+					font-family: "PT Sans"
+					font-size: 14px
+		.say-thx
+				color: #686868
+				font-family: "PT Sans"
+				font-size: 14px
+				margin-left: 30px
+				span
+					color: $black
+					width: 16px
+					text-align: right
+					display: inline-block
+				a
+					color: $black
+					text-decoration: none
+					background: url(../img/like.png) no-repeat
+					background-size: 21px   
+					padding: 2px 29px 1px 0
+					background-position: 100% 0%
+					transition: 0.5s
+					padding-left: 8px
+					&:hover
+						color: $yellow
+					&:before
+						content: '|'
+						color: #dcdcdc
+						margin-right: 12px
+						margin-left: 3px
+						font-size: 15px
+
+		#tab_where
+			padding-top: 50px
+			padding-left: 30px
+			padding-right: 60px
+			.row
+				margin-top: 25px
+				margin-bottom: 15px
+				.col-3
+					margin-right: 20px
+			p
+				margin-bottom: 26px
+				line-height: 18px
+			a
+				background: url(../img/printer.png) no-repeat
+				background-size: 16px
+				background-position: 100% 100%
+				color: #ffb32d
+				font-family: "PT Sans"
+				text-decoration: none
+				display: inline-block
+				width: 115px
+				margin-top: 10px
+			b
+				display: inline-block
+				margin-bottom: 15px
+			.direction
+				margin-bottom: 25px
+			img
+				margin-left: 20px
+
+			.map2
+				display: none
+			.map3
+				display: none
+			.map4
+				display: none
+			.map5
+				display: none
+
+		#tab_q-a
+			padding: 50px 30px
+			h4
+				color: #1b1b1b
+				font-family: "PT Sans"
+				font-size: 18px
+				font-weight: 400
+				margin: 0
+			.ask-question
+				margin-left: 60px
+				margin-top: 30px
+				margin-bottom: 50px
+				width: 820px
+				p
+					margin-top: 5px
+				button
+					width: 165px
+					height: 39px
+					background: $yellow
+					outline: none
+					border: none
+					border-radius: 4px
+					color: $black
+					font-family: "PT Sans"
+					font-size: 14px
+					transition: 0.2s					
+					&:hover
+						cursor: pointer
+						background: lighten($yellow, 5%)
+					&:active
+						font-size: 13.5px
+			hr
+				background: #dcdcdc
+				margin: 40px 0
+				margin-bottom: 45px
+			.say-thx
+				margin-left: 130px
+				margin-bottom: 18px
+			p
+				line-height: 22px
+			.answer
+				padding-left: 50px
+				margin-top: 20px
+				.consultant
+					color: #686868
+					background: url(../img/answer-arrow.png) no-repeat
+					background-size: 39px
+					background-position: 0% 70%
+					padding-left: 60px
+					padding-top: 15px
+					margin-left: 0
+				.say-thx
+					padding-top: 13px
+					margin-left: 183px
+				p
+					width: 670px
+					margin-left: 74px
+
+	&-docs
+		margin-top: 55px
+		max-width: 917px
+		margin-left: auto
+		margin-right: auto
+		h2
+			font-family: "Open Sans"
+			font-size: 24px
+			text-align: center
+			margin-bottom: 35px
+		a			
+			background: $white
+			border: 1px solid #dcdcdc
+			display: inline-block
+			font-family: "PT Sans"
+			font-size: 18px
+			color: $black
+			text-decoration: none
+			line-height: 59px			
+			padding-left: 25px
+			transition: 0.2s
+			margin-bottom: 24px
+			&:hover
+				background: $yellow
+				border: 1px solid $yellow				
+			&:hover span
+				color: $white
+			p
+				display: inline-block				
+				background-size: 25px
+				background-position: 0% 50%
+				padding-left: 35px
+			span
+				color: #686868
+				background: url(../img/download.png) no-repeat
+				background-size: 14px
+				background-position: 100% 50%
+				padding-right: 22px
+				position: absolute
+				right: 45px
+		&-download1
+			width: 387px
+			height: 59px
+			p
+				background: url(../img/pdf.png) no-repeat
+		&-download2
+			width: 504px
+			height: 59px
+			p
+				background: url(../img/jpg.png) no-repeat
+		.col-auto
+			padding: 0 14px
+
+	&-sizes
+		margin-top: 35px
+		padding: 0 30px
+		margin-left: auto
+		margin-right: auto		
+		h2
+			font-family: "Open Sans"
+			font-size: 24px
+			text-align: center
+			margin-bottom: 31px
+		button
+			width: 90px
+			height: 35px
+			background: $white
+			outline: none
+			border: 1px solid #dcdcdc
+			border-radius: 4px
+			color: $black
+			font-family: "PT Sans"
+			font-size: 14px
+			transition: 0.2s
+			margin-left: -12px
+			margin-right: -12px
+			margin-bottom: 7px
+			&:hover
+				cursor: pointer
+				background: $yellow
+				border: 1px solid $yellow
+			&:active
+				font-size: 13.5px
+		&-buttons
+			margin: 0 auto
+			width: 356px
+			margin-top: 10px
+			button[class="item-sizes-price"]
+				width: 170px
+				height: 45px 
+				background: none
+				font-family: "PT Sans"
+				font-size: 18px
+				line-height: 18px
+				font-weight: 700
+				margin-left: 0
+				&:hover
+					cursor: pointer
+					border: 1px solid #dcdcdc
+				&:active
+					font-size: 17.5px
+					border: 1px solid #dcdcdc
+				span
+					font-weight: 400
+			button[class="item-sizes-buy"]
+				width: 170px
+				height: 45px
+				background-color: $yellow
+				font-size: 18px
+				line-height: 18px
+				border: none
+				padding-left: 16px
+				position: relative
+				top: 0
+				margin-left: 25px
+				transition: 0.2s
+				&:hover
+					cursor: pointer
+					background-color: lighten($yellow, 5%)
+				&:active
+					font-size: 17.2px
+				img
+					width: 20px
+					position: absolute
+					left: 30px
+					top: 13px
+	
+	&-other
+		&-buttons
+			margin: 0 auto
+			width: 826px
+			margin-top: 75px
+			margin-bottom: 18px
+			button[class="other-button"]
+				width: 203px
+				height: 53px
+				background: $white
+				outline: none
+				border: 1px solid #dcdcdc
+				border-radius: 4px
+				color: $black
+				font-family: "PT Sans"
+				font-size: 18px
+				transition: 0.3s
+				margin-left: 35px
+				margin-right: 35px
+				&:hover, &:focus
+					cursor: pointer
+					background: $grey
+					color: $white
+					border: 1px solid $grey
+				&:active
+					font-size: 17.5px
+		.catalog-item-youtube
+			position: absolute
+			bottom: 1px
+			p
+				top: -19px
+				left: 26px
+		&-slider
+			width: 1160px
+			margin: 0 auto			
+			.slick-list
+				max-height: 450px
+			.catalog-item
+				margin-left: 15px
+				margin-right: 15px
+				margin-bottom: 22px
+				outline: none
+				&-youtube
+					a
+						p
+							top: -20px
+							left: 27px	
+				a
+					outline: none
+			.slick-next, .slick-prev
+				margin-right: -40px
+				&:before
+					content: ''
+			.slick-prev
+				margin-left: -38px
+
+	.catalog
+		padding: 0
+	&-subscribe
+		border-top:	1px solid #dcdcdc
+		background: $white
+		margin-top: 65px
+		margin-left: -10px
+		margin-right: -10px
+		.row
+			background: url(../img/subscribe-bg.png) no-repeat
+			background-size: 623px
+			background-position-x: 50%
+			height: 150px
+			max-width: 900px
+			margin: 0 auto
+			h2
+				font-family: "PT Sans"
+				font-size: 24px
+				font-weight: 400
+				margin-top: 25px
+				margin-bottom: 2px				
+			p
+				font-family: "PT Sans"
+				font-size: 14px
+				font-weight: 400
+		form
+			width: 520px
+			margin-top: 30px
+			margin-left: 25px
+			input[type="text"]
+				width: 293px
+				height: 41px
+				border: 1px solid #dcdcdc
+				border-radius: 4px
+				outline: none
+				padding-left: 15px
+				margin-bottom: 12px
+				font-family: "PT Sans"
+				font-size: 14px
+			label
+				display: block
+				margin-left: 1px
+				margin-bottom: -5px
+				span
+					height: 13px !important
+				p[class="item-subscribe-check"]
+					color: $black 
+					font-family: "PT Sans"
+					font-size: 12px
+					a
+						color: $black
+			button
+				width: 195px
+				height: 41px
+				background: $yellow
+				outline: none
+				border: none
+				border-radius: 4px
+				color: $black
+				font-family: "PT Sans"
+				font-size: 18px
+				transition: 0.3s
+				position: absolute
+				margin-left: 29px
+				&:hover
+					cursor: pointer
+					background-color: lighten($yellow, 5%)
+				&:active
+					font-size: 17.5px
+
+	
+
+
+
+
+
+
+				
+	

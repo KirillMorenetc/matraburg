@@ -1,0 +1,1894 @@
+@media (min-width: 992px)
+	.container 
+		max-width: 1010px		
+
+@media (max-width: 992px)
+	body
+		-webkit-box-shadow: none
+		-moz-box-shadow: none
+		box-shadow: none
+		
+//верхнее меню
+@media (max-width: 992px)
+	.top-nav 
+		a
+			letter-spacing: 0.2px
+		ul
+			li
+				margin-right: 7px
+				margin-left: 7px
+			.registration
+				padding-left: 8px
+		&_menu 
+			.login
+				background-image: none
+				a
+					padding-left: 0px
+
+@media (max-width: 767px)
+	.top-nav
+		&_city
+			margin-left: 8px
+		.icon-menu
+			display: block
+		&_menu
+			display: none
+			li	
+				border-top: 1px solid lighten($grey, 10%)			
+				&:hover
+					cursor: pointer
+					background-color: lighten($grey, 10%)
+				a					
+					display: list-item
+					padding: 1px 0
+					padding-left: 40% !important
+					letter-spacing: 0.6px
+			.registration
+				border-left: 0px !important
+				padding-left: 0px !important
+				margin-left: 7px !important
+
+@media (max-width: 420px)
+	.top-nav
+		display: none
+
+//логотип, телефон, акции, поиск, корзина
+@media (max-width: 1030px)
+	.header-menu
+		max-width: 970px
+		margin: 0 auto
+		.logo
+			img
+				margin-right: -12px
+				margin-left: 9px
+		.handset
+			img
+				margin-left: -16px
+		form
+			div
+				left: 219px
+			input
+				left: 247px
+
+@media (max-width: 991px)
+	.header-menu
+		.logo
+			width: 135px
+			padding-top: 18px
+			img
+				width: 100%
+		.phone
+			font-size: 20px
+			margin-left: 0px
+			&::after
+				font-size: 11px
+		.handset
+			img
+				margin-top: 10px
+				height: 40px
+				margin-left: -15px
+		.percent
+			margin-top: 6px
+			img
+				height: 40px
+				margin-left: -10px
+		.discounts
+			margin-top: 13px
+		.lens
+			img
+				height: 40px
+				margin-top: 10px
+				margin-left: -10px
+		.search
+			margin-top: 15px
+		.basket
+			img
+				height: 40px
+				margin-top: 10px
+				margin-left: -10px
+			&-content			
+				top: 62px
+		.how_much 
+			p:first-child
+				margin-top: 15px
+		form		
+			input
+				top: 16px
+				left: 140px
+				width: 110px
+			div
+				top: 12px
+				left: 114px
+
+@media (max-width: 767px)
+	.header-menu
+		.logo
+			width: 134px
+			padding-top: 15px
+		.phone
+			font-size: 18px
+			margin-left: -10px
+			&::after
+				font-size: 10px
+			p
+				margin-bottom: -12px
+		.handset
+			display: none
+		.percent
+			display: none
+		.discounts
+			display: none
+		.basket
+			&-content			
+				top: 61px
+		form
+			input
+				top: 16px
+				left: 50px
+			div
+				left: 24px
+
+@media (max-width: 575px)
+	.header-menu 
+		.container
+			max-width: 380px
+		.logo 
+			img 
+				width: 100%
+				max-width: 200px
+				margin-left: 20px
+		.phone
+			font-size: 21px
+		.percent
+			display: inherit
+		.discounts
+			display: inherit
+		.basket
+			&-content			
+				right: 20px
+				top: 54px
+		.justify-content-end
+			justify-content: center !important
+		form
+			input
+				left: 157px
+			div
+				left: 130px
+
+@media (max-width: 420px)
+	.header-menu
+		display: none
+
+//навигация по продукции
+@media (max-width: 992px)
+	.production-nav
+		.col-sm-auto
+			padding: 0 3px
+		a
+			font-size: 12px
+			letter-spacing: 0.5px
+
+@media (max-width: 767px)
+	.production-nav
+		a 
+			font-size: 10px
+			letter-spacing: 0.3px
+
+@media (max-width: 576px)
+	.production-nav
+		padding: 0 15px
+		margin-bottom: -12px
+		.col-sm-auto
+			border-bottom: 1px solid #cfcdcd
+			&:first-child
+				border-top: 1px solid #cfcdcd
+			&:hover
+				cursor: pointer
+				background-color: darken($white, 10%)	
+			a
+				display: list-item
+				padding-left: 38%
+				list-style: none
+		&-list
+			display: none
+			padding: 0 7px
+		&-btn
+			display: block
+			padding-bottom: 3px
+
+@media (max-width: 420px)
+	.production-nav
+		display: none
+
+//блок с картинкой
+@media (max-width: 767px)
+	.choose-mattress 		
+		height: 390px
+		.container
+			padding-top: 50px
+		h1
+			font-size: 46px
+			line-height: 56px	
+		.yellow-circle
+			margin-top: 40px
+@media (max-width: 576px)
+	.choose-mattress 
+		height: 346px
+		margin-top: 14px
+		h1
+			font-size: 32px
+			line-height: 42px
+		p
+			font-size: 20px
+			line-height: 26px
+		a
+			h2
+				margin-top: 33px
+
+@media (max-width: 420px)
+	.choose-mattress
+		display: none
+
+//числовые данные, статистика
+@media (max-width: 992px)
+	.numbers
+		margin-top: 70px
+		h2
+			font-size: 56px
+			letter-spacing: 1px
+		p
+			font-size: 17px
+
+@media (max-width: 767px)
+	.numbers
+		margin-top: 60px
+		h2
+			font-size: 43px
+			letter-spacing: 0px
+		p
+			font-size: 12px
+		&-mleft
+			margin-left: 10px
+
+@media (max-width: 576px)
+	.numbers
+		h2
+			text-align: center
+		p
+			text-align: center
+		&-mleft
+			margin-left: 0px
+
+@media (max-width: 420px)
+	.numbers
+		display: none
+
+//наши коллекции
+@media (max-width: 991px)
+	.collections
+		margin-top: 60px
+		h1			
+			margin-bottom: 40px		
+		&-menu
+			.col-auto
+				padding: 0
+			p
+				font-size: 17px
+				padding: 3px 10px
+		&-description
+			padding: 20px 15px 0px 22px
+			p
+				font-size: 14px
+				padding-right: 0
+				.collections-yellowlink
+					margin-bottom: 0
+			.collections-h
+				font-size: 29px
+			h3
+				font-size: 15px
+				margin-top: 14px
+			a
+				margin-top: 35px
+				margin-left: 150px
+				margin-bottom: 25px
+		img
+			width: 83%
+			margin-top: 125px
+		&-window
+			height: auto
+			min-height: 337px
+		&-guarantee
+			margin-bottom: 20px
+		&-button
+			bottom: 18px
+			a
+				margin: 0
+				p
+					padding: 5px 15px
+
+@media (max-width: 767px)
+	.collections
+		margin-top: 50px
+		h1			
+			font-size: 30px
+			letter-spacing: 1.7px
+		&-menu
+			max-width: 440px
+			margin: 0 auto
+			p
+				margin-left: 0
+				margin-right: 0
+		img
+			width: 350px
+			margin: 50px auto
+			display: block
+		&-guarantee
+			margin-top: 10px
+			margin-bottom: 10px
+		&-button
+			margin-top: 0
+			margin-bottom: 4px
+			position: relative
+		&-description
+			p
+				padding-right: 15px
+			a
+				margin-top: 27px
+
+@media (max-width: 450px)
+	.collections
+		&-description
+			padding-left: 15px
+		img
+			margin-left: 20px
+@media (max-width: 420px)
+	.collections
+		display: none
+
+//наши партнеры
+@media (max-width: 992px)
+	.partners		
+		margin-top: 80px
+		&-logo
+			margin-left: auto
+			margin-right: auto
+
+@media (max-width: 767px)
+	.partners
+		&-logo
+			margin-bottom: 40px
+
+@media (max-width: 576px)
+	.partners
+		max-width: 350px
+		h1
+			font-size: 30px
+			letter-spacing: 1.7px
+			margin-bottom: 40px
+		p
+			font-size: 25px
+			span
+				font-size: 60px
+				margin-top: 10px
+				display: inline-block
+
+@media (max-width: 420px)
+	.partners
+		display: none
+
+//популярные товары, слайдер
+@media (max-width: 1160px)
+	.popular
+		.container
+			max-width: 750px
+
+@media (max-width: 900px)
+	.popular
+		margin-top: 60px
+		.container
+			max-width: 490px
+
+@media (max-width: 767px)
+	.popular
+		&-description
+			height: 270px !important
+
+@media (max-width: 576px)
+	.popular
+		margin-top: 35px	
+		h1
+			font-size: 30px
+			letter-spacing: 1.7px
+			margin-bottom: 40px
+
+@media (max-width: 420px)
+	.popular
+		display: none
+
+//наши акции
+@media (max-width: 992px)
+	.our-actions
+		&-box
+			h2
+				font-size: 16px
+				letter-spacing: 0.5px
+
+@media (max-width: 767px)
+	.our-actions
+		margin-top: 100px
+		&-box
+			padding: 50px 30px 55px
+			img
+				width: 70px
+			p
+				font-size: 50px
+				letter-spacing: 2px
+			h2
+				font-size: 13px
+				letter-spacing: 0.2px
+			a
+				font-size: 12px
+				letter-spacing: 0.4px
+				margin-top: 12px
+
+@media (max-width: 576px)
+	.our-actions
+		h1
+			font-size: 30px
+			letter-spacing: 1.7px
+		&-box
+			padding: 50px 30px 30px
+			&-yellow
+				height: 70px
+				line-height: 70px
+			a
+				margin-bottom: 20px
+				margin-top: 7px
+
+@media (max-width: 420px)
+	.our-actions
+		display: none
+
+//отзывы
+@media (max-width: 1160px)
+	.feedbacks
+		.container
+			max-width: 787px
+		&-slider-block
+			height: 373px
+			width: 240px !important
+
+@media (max-width: 992px)
+	.feedbacks
+		margin-top: 80px
+		.container
+			max-width: 585px
+		&-slider
+			margin-top: 35px
+			&-block
+				height: 343px
+				width: 270px !important
+
+@media (max-width: 767px)
+	.feedbacks
+		.container
+			max-width: 336px
+		&-slider-block
+			height: 325px
+			width: 314px !important
+
+@media (max-width: 576px)
+	.feedbacks
+		margin-top: 60px
+		h1
+			font-size: 30px
+			letter-spacing: 1.7px
+
+@media (max-width: 420px)
+	.feedbacks
+		display: none
+
+//блог
+@media (max-width: 992px)
+	.blog
+		&-name
+			height: 160px
+		&-grey-cover
+			width: 160px !important
+			padding: 0 10px
+			&:hover .blog-longh2
+				margin-top: -20px !important
+		img
+			width: 160px
+		h2
+			font-size: 18px
+			letter-spacing: 0.6px
+		.blog-button
+			font-size: 13px
+			bottom: 12px
+			left: 50%
+			margin-left: -42px
+
+@media (max-width: 767px)
+	.blog
+		.container
+			max-width: 360px
+		h1
+			margin-bottom: 40px
+
+@media (max-width: 576px)
+	.blog
+		margin-top: 100px
+		h1
+			font-size: 30px
+			letter-spacing: 1.7px
+		.col-auto
+			padding: 0px 15px
+
+@media (max-width: 420px)
+	.blog
+		margin-top: 20px
+		.row
+			&:last-child
+				display: none
+		h1
+			display: none
+		&-more
+			display: block
+
+@media (max-width: 370px)
+	.blog
+		&-name
+			height: 135px
+		&-grey-cover
+			width: 135px !important
+		img
+			width: 135px
+		h2
+			font-size: 17px
+			line-height: 19px
+		.col-auto
+			padding: 0px 8px
+
+@media (max-width: 330px)
+	.blog
+		&-name
+			height: 120px
+		&-grey-cover
+			width: 120px !important
+		img
+			width: 120px
+		.blog-button
+			padding: 3px 23px
+			bottom: 8px
+		h2
+			font-size: 16px
+			line-height: 16px
+		&-more
+			a
+				margin-left: 30%
+		.row
+			padding: 0 5px
+
+//о компании
+@media (max-width: 992px)
+	.company
+		margin-top: 55px
+		h1
+			margin-bottom: 35px
+
+@media (max-width: 576px)
+	.company
+		margin-top: 40px
+		h1
+			font-size: 30px
+			letter-spacing: 1.7px
+			margin-bottom: 25px
+		p
+			font-size: 16px
+			padding: 0 10px
+			margin-bottom: 15px
+
+@media (max-width: 420px)
+	.company
+		margin-top: 13px
+		margin-bottom: 0px
+		.container
+			max-width: 363px
+		p
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.4px
+			&:last-child
+				display: none
+		h1
+			color: $black
+			font-family: "Open Sans"
+			font-size: 17px
+			font-weight: 600
+			letter-spacing: 0.4px
+			margin-bottom: 7px
+			margin-top: 10px
+		hr
+			display: block
+			height: 1px
+		&-more
+			display: block
+
+@media (max-width: 330px)
+	.company
+		h1
+			font-size: 14px
+		&-more
+			a
+				margin-left: 28%
+
+//нижнее меню, серый фон
+@media (max-width: 992px)
+	.footer-menu
+		h2
+			font-size: 15px
+		.col-auto
+			padding: 0
+
+@media (max-width: 767px)
+	.footer-menu
+		.container
+			padding: 0 15px
+		h2
+			font-size: 11px
+			letter-spacing: 0.4px
+		a
+			font-size: 11px
+			line-height: 16px
+			display: inherit		
+
+@media (max-width: 576px)
+	.footer-menu
+		.container
+			padding: 0
+		background: $grey
+		padding-top: 15px
+		padding-bottom: 5px
+		h2
+			margin-top: 0px
+			font-size: 10px
+		a
+			font-size: 10px
+			line-height: 10px
+			max-width: 65px
+			letter-spacing: 0.5px
+		.row
+			padding: 0px 30px
+		ul
+			li:first-child
+				margin-top: -10px		
+
+@media (max-width: 520px)
+	.footer-menu
+		h2
+			font-size: 9px
+			letter-spacing: 0
+		a
+			font-size: 9px
+			max-width: 50px
+
+@media (max-width: 420px)
+	.footer-menu
+		padding-top: 10px
+		padding-bottom: 0px
+		h2
+			font-size: 8px
+			letter-spacing: 0
+		a
+			font-size: 9px
+			max-width: 50px
+			letter-spacing: 0
+			line-height: 9px
+		ul
+			li
+				margin-bottom: 7px
+
+@media (max-width: 370px)
+	.footer-menu
+		h2
+			font-size: 7px
+		a
+			font-size: 7px
+			max-width: 40px
+			line-height: 5px
+
+@media (max-width: 330px)
+	.footer-menu
+		h2
+			font-size: 6px
+		a
+			font-size: 6px
+			max-width: 33px
+
+
+//футер: копирайт, контакты, лого
+@media (max-width: 992px)
+	.footer-copy
+		p
+			font-size: 13px
+		a
+			img
+				width: 100%
+
+@media (max-width: 767px)
+	.footer-copy
+		&-logo
+			display: none		
+
+@media (max-width: 576px)
+	.footer-copy
+		p
+			font-size: 12px
+		&-copyright
+			max-width: 205px
+
+@media (max-width: 420px)
+	.footer-copy
+		padding: 15px 10px 17px
+		&-contacts
+			img
+				width: 14px
+			&-phone
+				margin-bottom: 2px
+				img
+					margin-top: -3px
+			&-mail
+				img
+					margin-top: 1px
+		&-copyright
+			max-width: 100%
+		p
+			font-size: 9px
+			line-height: 12px
+			margin-left: 7px
+
+@media (max-width: 330px)
+	.footer-copy
+		&-contacts
+			img
+				width: 10px
+			&-phone
+				margin-bottom: -1px
+				img
+					margin-top: -1px
+			&-mail
+				img
+					margin-top: 3px
+		p
+			font-size: 8px
+			margin-left: 5px
+	
+
+//адаптивность мобильной версии, до 420px............
+//шапка
+@media (max-width: 420px)
+	.mobile-top-nav
+		display: block		
+
+@media (max-width: 370px)
+	.mobile-top-nav
+		display: block
+		.container
+			width: 310px
+		&-logo
+			font-size: 40px
+			&:after
+				width: 265px
+				height: 2px
+				top: 48px
+				left: 10px
+		&-phone
+			font-size: 15px
+			padding: 6px 4px 6px 4px
+			margin: 4px -8px 0
+		&-login
+			margin-left: -18px
+		&-search
+			margin-right: -16px
+		&-howmuch
+			left: 2px
+		ul
+			margin: 7px -5px 0 -6px
+		form
+			width: 104%
+			margin-left: -7px
+			input
+				width: 82%		
+		&-basket-content
+			margin-left: 166px
+			ul
+				margin: 12px 0
+
+@media (max-width: 330px)
+	.mobile-top-nav
+		display: block
+		.container
+			width: 259px
+		&-logo
+			font-size: 35px
+			&:after
+				width: 232px
+				top: 47px
+				left: 5px
+		&-phone
+			font-size: 12px
+			padding: 8px 3px 6px 3px
+			margin: 4px -4px 0
+		img
+			height: 38px
+		&-login
+			margin-left: -9px
+		&-search
+			margin-right: -11px
+		&-howmuch
+			left: 0px
+		ul
+			margin: 7px -8px 0 -10px
+			li
+				a
+					padding-left: 34%
+		form
+			width: 108%
+			margin-left: -12px
+			input
+				width: 79%
+		&-basket-content
+			margin-left: 118px
+			top: 115px
+			ul
+				margin: 12px 0
+				li
+					a
+						padding-left: 0
+
+//раздел с продукцией
+@media (max-width: 420px)
+	.mobile-production
+		display: block		
+
+@media (max-width: 370px)
+	.mobile-production
+		.container
+			width: 297px
+		h1
+			font-size: 16px
+			width: 285px
+
+@media (max-width: 330px)
+	.mobile-production
+		.container
+			width: 249px
+		h1
+			font-size: 14px
+			width: 250px
+		img
+			width: 120px
+		p
+			font-size: 14px
+
+//слайдер
+@media (max-width: 420px)
+	.mobile-actions
+		display: block
+
+@media (max-width: 370px)
+	.mobile-actions
+		.container
+			max-width: 328px
+		h1
+			top: -137px
+		p
+			top: -106px
+			line-height: 22px
+		h2
+			margin-top: -73px
+
+@media (max-width: 330px)
+	.mobile-actions
+		.container
+			max-width: 279px
+		h1
+			top: -119px
+		p
+			top: -93px
+
+//оплата, доставка
+@media (max-width: 420px)
+	.mobile-delivery
+		display: block
+
+@media (max-width: 330px)
+	.mobile-delivery
+		.container
+			max-width: 270px
+		a
+			margin-left: 30%
+		h1
+			font-size: 14px
+
+//предел адаптивности
+@media (max-width: 280px)
+	.container
+		width: 270px
+
+
+//адаптивность страницы КАТАЛОГ
+@media (max-width: 992px)
+	.catalog
+		h1
+			font-size: 18px
+		&-sorting
+			padding-left: 10px
+			li
+				a
+					padding: 8px 13px
+		&-hardtochoose
+			width: 360px
+			h2
+				margin-bottom: 8px
+			h3
+				margin-bottom: 14px
+			.row
+				width: 360px
+				margin-bottom: 20px
+				.col-auto
+					margin: 0 auto
+			p
+				margin-bottom: 18px
+				font-size: 13px
+
+
+@media (max-width: 767px)
+	.catalog
+		padding-top: 30px
+		.container
+			min-width: 540px
+		&-parameter-name
+			font-size: 13px
+		label
+			p
+				font-size: 13px
+		&-sorting
+			width: 362px
+			padding-left: 0
+			li
+				font-size: 13px
+				a
+					padding: 8px 5px
+					letter-spacing: 0.2px
+		&-pagination
+			width: 370px
+			li
+				a
+					line-height: 24px					
+					width: 24px
+				&:first-child
+					margin-right: 17px
+				&:last-child
+					margin-left: 17px
+
+
+			
+
+
+
+//.........адаптивность страницы Карточка товара...........
+//матрас Passion
+@media (max-width: 1050px)
+	.item
+		&-mattressImg
+			width: 500px
+		&-options
+			width: 500px
+		&-quickOrder
+			width: 460px
+			.catalog-size-nonstandart
+				white-space: nowrap
+
+@media (max-width: 991px)
+	.item
+		&-mattressImg
+			width: 360px
+			img
+				margin-top: 150px
+				margin-left: 50px
+				margin-bottom: 35px
+				width: 250px
+			&-grayBlocks
+				margin-left: 20px
+			.catalog-item-youtube
+				right: 17px
+			.catalog-item-discount
+				left: 20px
+			.catalog-item-rating
+				right: 17px
+		&-options
+			width: 360px
+			p
+				white-space: normal
+				font-size: 12px
+			.row
+				padding-left: 27px
+				padding-right: 0
+				margin-top: 25px
+		&-quickOrder
+			width: 360px
+			margin-left: -5px
+			padding-left: 23px
+			padding-right: 23px
+			&-select
+				select
+					width: 150px
+					height: 25px
+					font-size: 12px
+			&-price
+				font-size: 30px
+				margin-top: 21px
+			&-oldPrice
+				font-size: 16px
+			.catalog-size-nonstandart
+				font-size: 12px
+			span
+				width: 130px
+			button
+				width: 135px
+				height: 40px
+				font-size: 15px	
+				&:active
+					font-size: 14.5px	
+				&:last-child
+					margin-top: 103px				
+				img
+					width: 18px
+					left: 20px
+					top: 13px
+			h3
+				white-space: nowrap
+			&-special
+				.catalog-item-property
+					margin-top: 40px
+					li
+						margin-right: 15px
+						&:before
+							width: 49px
+							height: 49px
+
+@media (max-width: 767px)
+	.item
+		padding-top: 20px
+		&-back
+			display: none
+		&-mattressImg
+			margin: 0 auto
+			margin-top: 15px
+			height: 335px			
+			img
+				margin-top: 108px
+				margin-bottom: -23px
+			.catalog-item-discount
+				top: 15px
+				left: 15px
+				width: 55px
+				height: 55px
+				background-size: 55px
+				font-size: 16px
+				line-height: 55px
+			.catalog-item-rating
+				top: 15px
+				right: 15px
+			.catalog-item-youtube
+				bottom: 17px
+		&-options
+			margin: 0 auto
+			margin-top: 15px
+		&-quickOrder
+			margin: 0 auto
+			margin-top: 15px
+			height: 475px
+			padding-top: 20px
+			&-special
+				h4
+					margin-top: 15px
+				.catalog-item-property
+					margin-top: 15px
+
+@media (max-width: 576px)
+	.item
+		h1
+			font-size: 20px
+
+@media (max-width: 400px)
+	.item
+		padding-left: 5px
+		padding-right: 5px
+		&-mattressImg
+			width: 300px
+			height: 310px
+			img
+				width: 220px
+				margin-left: 36px
+				margin-top: 115px
+				margin-bottom: -33px
+			&-grayBlocks
+				margin-left: 15px
+				width: 170px
+			&-grayBlock
+				width: 45px
+				height: 45px
+				margin-right: 12px
+			.catalog-item-youtube
+				right: 8px
+				bottom: 13px
+			.catalog-item-rating
+				p
+					font-size: 12px
+		&-options
+			width: 300px
+			height: 60px
+			.row
+				padding-left: 22px
+				margin-top: 15px
+				p
+					font-size: 11px
+		&-quickOrder
+			width: 300px
+			height: 455px
+			padding-left: 15px
+			padding-right: 15px
+			h3
+				font-size: 13px
+			&-select
+				select
+					width: 130px
+					font-size: 11px
+					padding: 0 20px 0 7px
+			&-price
+				font-size: 25px
+				margin-top: 26px
+			&-oldPrice
+				font-size: 15px
+				margin-top: 0
+			.catalog-size-nonstandart
+				white-space: normal
+				font-size: 11px
+			span
+				font-size: 11px
+			button
+				width: 120px
+				height: 35px
+				font-size: 13px
+				line-height: 13px
+				margin-top: 65px
+				&:active
+					font-size: 12.5px	
+				&:last-child
+					margin-top: 109px
+				img
+					left: 18px
+					top: 9px
+			&-city
+				select
+					font-size: 13px					
+				p
+					font-size: 13px
+					white-space: nowrap
+			&-special
+				h4
+					font-size: 15px
+					margin-bottom: 3px
+				p
+					font-size: 13px
+				.catalog-item-property
+					margin-top: 13px
+					li
+						margin-right: 10px
+						font-size: 11px
+						&:before
+							width: 44px
+							height: 44px
+
+//Аксессуары и опции
+@media (max-width: 1180px)
+	.item
+		&-accessories			
+			&-slider
+				max-width: 760px
+				margin: 0 auto
+
+@media (max-width: 890px)
+	.item
+		&-accessories			
+			&-slider
+				max-width: 504px
+
+@media (max-width: 670px)
+	.item
+		&-accessories
+			margin-top: 30px
+			h2
+				font-size: 20px
+				margin-bottom: 20px
+			&-slider
+				max-width: 504px
+				.slick-dots
+					margin-bottom: 15px
+
+@media (max-width: 520px)
+	.item
+		&-accessories			
+			&-slider
+				max-width: 244px
+				&-block
+					margin-right: 4px
+					margin-left: 4px
+
+//последовательные вклакди
+@media (max-width: 1050px)
+	.item
+		&-tabs
+			max-width: 950px
+			label
+				width: 183px
+			.map1
+				display: none
+			.map2
+				display: block !important
+			#tab_feedbacks
+				.col-md-10
+					padding-right: 20px
+				.col-md-2
+					margin-left: -20px
+				.say-thx
+					margin-left: -10px
+				button
+					margin-top: -20px
+			#tab_q-a
+				.ask-question
+					margin-left: 35px
+				.say-thx
+					margin-left: 96px
+				.answer
+					.say-thx
+						margin-left: 144px
+
+@media (max-width: 992px)
+	.item
+		&-tabs
+			label
+				width: 137px
+				font-size: 15px
+				padding: 9px
+				height: 38px			
+			#tab_properties
+				padding: 30px 40px
+				.ul-contents
+					li
+						width: 300px			
+			#tab_feedbacks
+				padding-top: 40px
+				padding-bottom: 30px
+				.col-md-10
+					padding-right: 45px
+				.col-md-2
+					margin-left: -50px
+					.catalog-item-rating
+						width: inherit						
+				.catalog-item-rating
+					width: 250px
+					ul
+						margin-right: 10px
+				.say-thx
+					margin-left: 40px
+					line-height: 19px
+					a:before
+						content: ''
+						margin: 0
+				.feedback-text
+					margin-top: 18px
+				button
+					margin-top: 20px
+			#tab_where
+				padding-top: 35px
+				padding-bottom: 25px
+				padding-left: 25px
+				padding-right: 50px
+				.row
+					.col-md-3
+						margin-right: 0
+						p
+							width: 165px
+					.col-md-4
+						p
+							width: 250px
+				img
+					margin-left: 35px
+					width: 240px
+				p
+					margin-bottom: 20px
+				b
+					margin-bottom: 8px
+				.direction
+					margin-bottom: 15px
+				.map2
+					display: none !important
+				.map3
+					display: block !important
+			#tab_q-a
+				padding: 35px 25px
+				.ask-question
+					margin-left: -2px
+					margin-top: 20px
+					margin-bottom: 0
+					width: 673px
+					p
+						margin-top: 2px
+				.say-thx
+					margin-left: 0px
+					a:before
+						margin-right: 6px
+						margin-left: -4px
+				hr
+					margin: 30px 0
+				.answer
+					padding-left: 20px
+					margin-top: 20px
+					.consultant
+						background-position: 1% 70%
+					.say-thx
+						margin-left: 47px
+					p
+						width: 550px
+						margin-top: -10px
+
+@media (max-width: 767px)
+	.item
+		&-tabs
+			label
+				width: 103px
+				font-size: 12px
+				padding: 3px
+				margin-left: 2.76px
+				height: 30px
+				padding-top: 6px
+			#tab_description
+				padding: 25px 30px
+			#tab_properties
+				padding: 25px 30px
+				.ul-contents
+					margin-top: 5px
+					li
+						width: 220px
+				.ul-materials
+					margin-top: 5px
+				.ul-properties
+					margin-top: 5px
+					li
+						padding-left: 10px
+						padding-right: 55px
+			#tab_feedbacks
+				padding: 30px 25px
+				.say-thx
+					margin-left: 68px
+					width: 180px
+				.feedback-text
+					margin-top: 15px
+				hr
+					margin: 30px 0
+				.col-12
+					margin-left: 0
+					&:last-child
+						button
+							margin: 0			
+				.feedback-rating
+					margin-top: 20px
+					margin-bottom: 20px
+				.feedback-lines
+					position: absolute
+					top: 29px
+					left: 200px
+			#tab_where
+				padding: 25px
+				img
+					display: none
+				.row
+					margin-top: 10px
+					margin-bottom: 0
+				.direction
+					margin-bottom: 8px
+				b
+					margin-bottom: 2px
+				p
+					margin-bottom: 15px
+				.map3
+					display: none !important
+				.map4
+					display: block
+			#tab_q-a
+				padding: 25px
+				.ask-question
+					width: 488px
+					margin-left: 0
+					button
+						margin-top: 10px
+				.say-thx
+					width: 180px
+					margin-left: 56px
+					margin-bottom: 15px
+					a:before
+						content: none
+				.answer
+					margin-top: 15px
+					padding-left: 0
+					p
+						width: 400px
+						margin-left: 55px
+					.say-thx
+						margin-bottom: 17px	
+						margin-left: 100px				
+						width: 180px
+						a
+							padding-left: 8px
+					.consultant
+						background-position: 1% 52%
+						background-size: 30px
+						padding-left: 40px
+
+@media (max-width: 576px)
+	.item
+		&-tabs
+			label
+				width: auto
+				margin-left: 2.937px
+			#tab_description
+				padding: 20px 15px
+			#tab_properties
+				padding: 20px 15px
+				.ul-contents
+					margin-bottom: 15px
+					li
+						width: auto
+						margin-bottom: 4px
+				.ul-materials
+					margin-bottom: 15px
+					li
+						margin-bottom: 5px
+			#tab_feedbacks
+				padding: 20px 15px
+				.say-thx
+					display: none
+				.catalog-item-rating
+					ul
+						margin-right: 5px
+					p
+						font-size: 12px
+				.feedback-lines
+					left: 195px
+			#tab_where
+				padding: 20px 15px
+				.map4
+					display: none !important
+				.map5
+					display: block
+				.row 
+					.col-md-4 
+						p
+							width: 220px
+			#tab_q-a
+				padding: 20px 15px
+				.ask-question
+					width: 330px
+					margin: 0 auto
+					margin-top: 15px
+					p
+						margin-top: 0
+						margin-bottom: 10px
+					button
+						margin-top: 5px
+				.say-thx
+					display: none
+				.answer
+					.consultant
+						margin-bottom: 15px
+					p
+						padding-right: 10px
+				hr
+					margin: 20px 0
+				.name
+					margin-bottom: 5px
+					white-space: nowrap
+
+@media (max-width: 462px)
+	.item
+		&-tabs
+			label
+				display: block
+				margin-left: 0
+			#tab_where				
+				.col-5
+					box-sizing: unset
+				p
+					margin-bottom: 10px
+				a
+					margin-top: 0
+					margin-bottom: 12px
+
+@media (max-width: 400px)
+	.item
+		&-tabs
+			#tab_feedbacks
+				.feedback-lines
+					display: none
+				.feedback-rating
+					margin: 20px auto
+				.col-12:last-child button
+					margin: 0 auto
+				button
+					width: 200px
+				hr
+					margin: 20px 0
+				.feedback-text
+					margin-top: 10px
+			#tab_where
+				.map5
+					display: none !important
+			#tab_q-a
+				.ask-question
+					width: 200px
+					text-align: center
+				.consultant
+					width: 190px
+
+//документы, размеры
+@media (max-width: 1050px)
+	.item
+		&-sizes
+			button
+				width: 85px
+@media (max-width: 992px)
+	.item
+		&-docs
+			a
+				padding-left: 10px
+				font-size: 15px
+				span
+					right: 27px
+				p
+					padding-left: 32px
+			&-download1
+				width: 296px
+			&-download2
+				width: 398px
+				p
+					background-position: 0% 17%	
+		&-sizes
+			padding: 0 10px
+			button
+				width: 67px
+				font-size: 13px
+				line-height: 13px
+				&:active
+					font-size: 12.5px
+			&-buttons
+				button[class="item-sizes-price"], button[class="item-sizes-buy"]
+					width: 150px
+					height: 40px
+					font-size: 16px
+					&:active
+						font-size: 15.5px
+				button[class="item-sizes-buy"]
+					img
+						left: 25px
+						top: 11px
+
+@media (max-width: 767px)
+	.item
+		&-docs
+			&-download1
+				width: 400px
+			&-download2
+				width: 400px
+			.col-auto
+				margin: 0 auto
+		&-sizes
+			padding: 0 60px
+			button
+				width: 82px
+				font-size: 13px
+
+
+@media (max-width: 576px)
+	.item		
+		&-docs
+			margin-top: 30px
+			a
+				margin-bottom: 15px
+			h2
+				font-size: 20px
+				margin-bottom: 20px
+		&-sizes
+			max-width: 350px
+			padding: 0
+			margin-top: 20px
+			h2
+				font-size: 20px
+				margin-bottom: 20px
+			button
+				width: 70px
+
+@media (max-width: 462px)
+	.item
+		&-docs
+			a
+				font-size: 14px
+				p
+					width: 185px
+					line-height: 18px
+					margin-top: 10px
+			&-download1
+				width: 270px
+			&-download2
+				width: 270px
+
+@media (max-width: 400px)
+	.item
+		&-sizes
+			max-width: 240px
+			padding: 0			
+			button
+				font-size: 10px
+				line-height: 10px
+				width: 52px
+				margin-left: -14px
+				margin-right: -14px
+				&:active
+					font-size: 9.3px
+			&-buttons
+				width: 150px
+				margin-top: 5px
+				button[class="item-sizes-price"], button[class="item-sizes-buy"]
+					width: 130px
+					height: 33px
+					font-size: 14px
+					&:active
+						font-size: 13.5px
+				button[class="item-sizes-buy"]
+					margin-left: 0
+					margin-top: 5px
+					img
+						width: 16px
+						left: 23px
+						top: 9px
+
+//Аналоги
+@media (max-width: 1300px)
+	.item
+		&-other
+			&-buttons
+				width: 796px
+				button[class="other-button"]
+					margin: 0 30px
+			&-slider
+				width: 770px
+
+@media (max-width: 920px)
+	.item
+		&-other
+			&-buttons
+				width: 668px
+				button[class="other-button"]
+					margin: 0 20px
+					width: 180px
+					height: 45px
+			&-slider
+			.slick-dots
+				bottom: -20px
+
+@media (max-width: 800px)
+	.item
+		&-other
+			&-buttons
+				width: 428px
+				margin-top: 65px
+				margin-bottom: 15px
+				button[class="other-button"]
+					margin: 0 10px
+					width: 120px
+					height: 38px
+					font-size: 15px
+					&:active
+						font-size: 14.5px
+			&-slider
+				width: 385px
+
+@media (max-width: 530px)
+	.item
+		&-other
+			&-buttons
+				width: 340px
+				margin-top: 50px
+				margin-bottom: 12px
+				button[class="other-button"]
+					margin: 0 6px
+					width: 99px
+					height: 35px
+					font-size: 14px
+					&:active
+						font-size: 13.5px
+
+@media (max-width: 410px)
+	.item
+		&-other
+			display: none
+
+//подписаться
+@media (max-width: 992px)
+	.item
+		&-subscribe
+			.row
+				max-width: 750px
+				h2
+					font-size: 20px
+				p
+					font-size: 12px
+			form
+				margin-left: 0
+				width: 410px
+				input[type="text"]
+					width: 230px
+				button
+					width: 150px
+					font-size: 17px
+					margin-left: 25px
+					&:active
+						font-size: 16.5px
+
+@media (max-width: 767px)
+	.item
+		&-subscribe
+			.hidden-sm
+				display: none
+
+@media (max-width: 470px)
+	.item
+		&-subscribe
+			margin-top: 50px
+			form
+				width: 280px
+				margin-top: 15px
+				padding-left: 8px
+				input[type="text"]
+					width: 230px
+					height: 35px
+					margin-bottom: 10px
+				button
+					width: 150px
+					height: 35px
+					font-size: 15px
+					margin-left: 0px
+					margin-bottom: 4px
+					position: inherit
+					&:active
+						font-size: 14.5px
+				label
+					p[class="item-subscribe-check"]
+						font-size: 11px 
+
+//всплавающее окно при нажатии на кнопку YouTube
+@media (max-width: 767px)
+	.review
+		&-youtube
+			width: 480px
+			height: 270px
+			margin-top: -135px
+
+@media (max-width: 576px)
+	.review
+		&-youtube
+			width: 400px
+			height: 225px
+			margin-top: -112.5px
+		span
+			font-size: 50px
+
+@media (max-width: 450px)
+	.review
+		&-youtube
+			width: 320px
+			height: 180px
+			margin-top: -90px
+		span
+			font-size: 40px
+
+@media (max-width: 350px)
+	.review
+		&-youtube
+			width: 256px
+			height: 144px
+			margin-top: -90px
+
+//модальное окно при нажатии на кнопку Быстрый заказ
+@media (max-width: 576px)
+	.order-popup
+		&-window
+			width: 380px
+			height: 490px
+			span
+				top: 4px
+				right: 12px
+			h2
+				font-size: 20px
+				padding-top: 30px
+			p
+				font-size: 15px
+				max-width: 310px
+				margin-bottom: 15px
+			form
+				label
+					margin-bottom: 5px
+				input
+					margin-bottom: 12px
+					height: 35px
+				button
+					margin-bottom: 12px
+					margin-top: 12px
+					height: 32px
+				.yellow-checkbox
+					p
+						top: 3px
+@media (max-width: 420px)
+	.order-popup
+		&-window
+			width: 300px
+			height: 450px
+			h2
+				font-size: 18px
+				padding-top: 28px
+			p
+				font-size: 13px
+				width: 268px
+			form
+				max-width: 260px
+				input
+					width: 260px
+					height: 30px
+					font-size: 12px	
+				label
+					font-size: 12px
+					margin-bottom: 3px
+				button
+					font-size: 13px
+					margin-top: 10px
+					margin-bottom: 10px
+					&:active
+						font-size: 12.5px
+				.yellow-checkbox
+					margin-left: 5px
+					p
+						font-size: 11px
+

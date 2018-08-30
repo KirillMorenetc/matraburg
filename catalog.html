@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../favicon.ico">
+
+		<title>Матрасбург</title>
+
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+
+		<!--шрифты PT Sans, Open Sans-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+		<!--Slick-slider-->
+		<link rel="stylesheet" href="js/plugins/slick/slick-theme.css">
+		<link rel="stylesheet" href="js/plugins/slick/slick.css">
+
+
+
+		<!--Slider UI (Ползунок выбора параметра))-->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+		<link href="css/main.css" rel="stylesheet">			
+
+	</head>
+	
+	<body>
+		<div class="top-nav"><!--...верхняя навигация...-->
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-md-auto">
+						<div class="top-nav_city">
+							<a href="">Москва</a>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<ul class="top-nav_menu">
+							<li><a href="">Магазины</a></li>
+							<li><a href="">Доставка и оплата</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Покупателям</a></li>
+							<li><a href="">Партнёрам</a></li>
+							<li><a href="">Контакты</a></li>
+							<li>
+								<div class="login">
+									<a href="">Вход</a>
+								</div>
+							</li>
+							<li class="registration"><a href="">Регистрация</a></li>
+						</ul>						
+					</div>
+					<i class="icon-menu"></i>
+				</div>				
+			</div>			
+		</div>
+
+		<div class="mobile-top-nav"><!--верхняя навигация, до 420 px-->
+			<div class="container">
+				<div class="row">
+					<div class="col-10">
+						<a href="">
+							<p class="mobile-top-nav-logo">matrasburg</p>
+						</a>
+					</div>
+					<div class="col-2">						
+						<img class="mobile-top-nav-menu-btn" src="img/mobile/menu.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<a href="">
+							<img class="mobile-top-nav-mapmarker" src="img/mobile/mapmarker.png" alt="">
+						</a>
+					</div>
+					<div class="col-2">
+						<a href="">
+							<img class="mobile-top-nav-login" src="img/mobile/login.png" alt="">
+						</a>
+					</div>
+					<div class="col-4">
+						<a href="">
+							<p class="mobile-top-nav-phone">8 800 550 57 53</p>
+						</a>
+					</div>
+					<div class="col-2">						
+						<img class="mobile-top-nav-search" src="img/mobile/search.png" alt="">	
+					</div>
+					<div class="col-2">						
+						<img class="mobile-top-nav-basket" src="img/mobile/basket.png" alt="">
+						<p class="mobile-top-nav-howmuch">2</p>						
+					</div>
+				</div>
+				<ul class="mobile-top-nav-menu">
+					<li><a href="">Магазины</a></li>
+					<li><a href="">Доставка и оплата</a></li>
+					<li><a href="">О компании</a></li>
+					<li><a href="">Покупателям</a></li>
+					<li><a href="">Партнёрам</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Вход</a></li>
+					<li><a href="">Регистрация</a></li>
+				</ul>
+				<form action="" id="mobile-top-nav-searching">
+					<input type="text" placeholder="Поиск">
+					<button>
+						<img src="img/mobile/search.png" alt="">
+					</button>
+				</form>
+				<div class="mobile-top-nav-basket-content">
+					<ul>
+						<li><a href="">Товар 1</a></li>
+						<li><a href="">Товар 2</a></li>
+					</ul>
+					<p>
+						<a href="">Перейти в корзину...</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-menu"> <!--...следующий раздел: логотип, телефон, акции, поиск, корзина...-->
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6 col-sm">
+						<div class="row">
+							<div class="col-sm-auto col-5 logo">
+								<a href=""><img src="img/logo.png" alt=""></a>
+							</div>
+							<div class="col-sm-auto col-7 phone">
+								<p>8 800 550 57 53</p>
+							</div>
+							<div class="col-sm-auto handset">
+								<a href=""><img src="img/handset.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm">
+						<div class="row justify-content-end">
+							<form action="" id="header-menu-searching">
+								<div></div>
+								<input type="text" placeholder="Поиск">
+							</form>
+							<div class="col-sm-auto col-auto percent">
+								<a href=""><img src="img/percent.png" alt=""></a>
+							</div>
+							<div class="col-sm-auto col-auto discounts">
+								<a href="">
+									<p>Акции</p>
+									<p>Скидки</p>
+								</a>
+							</div>
+							<div class="col-sm-auto col-auto lens">
+								<img src="img/lens.png" alt="">
+							</div>
+							<div class="col-sm-auto col-auto search search-active">
+								<p>Поиск товара</p> 
+								<p>по названию</p>
+							</div>
+							<div class="col-sm-auto col-auto basket">
+								<img src="img/basket.png" alt="">
+							</div>
+							<div class="col-sm-auto col-auto how_much">
+								<p>2 товаров</p>
+								<p>12 345 руб.</p>
+							</div>
+							<div class="basket-content">
+								<ul>
+									<li><a href="">Товар 1</a></li>
+									<li><a href="">Товар 2</a></li>
+								</ul>
+								<p>
+									<a href="">Перейти в корзину...</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="mobile-production"><!--навигация по продукции до 420 px-->
+			<div class="container">
+				<h1>Фабрика матрасов Матрасбург производим матрасы с 2001 года</h1>
+				<div class="row">
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>матрасы</p>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>наматрасники</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>подушки</p>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>кровати</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>диваны</p>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>аксессуары</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>товары для детей</p>
+						</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="production-nav"><!--навигация по продукции-->
+			<div class="container">
+				<hr>
+				<div class="production-nav-btn">
+					<h2 class="production-nav-btn-categories">Категории</h2>
+					<div class="production-nav-btn-arrow"></div>
+				</div>
+				<div class="row justify-content-around production-nav-list">
+					<div class="col-sm-auto"><a href="">Матрасы</a></div>
+					<div class="col-sm-auto"><a href="">Наматрасники</a></div>
+					<div class="col-sm-auto"><a href="">Подушки</a></div>
+					<div class="col-sm-auto"><a href="">Кровати и спальни</a></div>
+					<div class="col-sm-auto"><a href="">Диваны</a></div>
+					<div class="col-sm-auto"><a href="">Аксессуары для сна</a></div>
+					<div class="col-sm-auto"><a href="">Товары для детей</a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="review">
+			<div class="review-youtube"></div>
+			<span>+</span>
+		</div>
+
+		<div class="order-popup catalog">
+			<div class="order-popup-window">
+				<span>+</span>
+				<h2>Быстрый заказ</h2>
+				<p>После оформления заказа менеджер свяжется с вами в течение 15 минут для подтверждения</p>
+				<form action="">
+					<label for="your-name">Ваше имя<small>*</small></label>
+					<input type="text" placeholder="Как к вам обратиться?" id="your-name">
+					<label for="your-phone">Телефон<small>*</small></label>
+					<input type="text" placeholder="+7(___)___ __ __" id="your-phone">
+					<label for="your-email">Эл.почта</label>
+					<input type="text" placeholder="Пришлем информацию о заказе" id="your-email">
+					<button>Оформить заказ</button>
+					<label class="yellow-checkbox">
+						<input type='checkbox'>
+						<span></span>
+						<p class="order-popup-check">Я согласен с <a href="">Политикой конфиденциальности</a></p>
+					</label>
+					<label class="yellow-checkbox">
+						<input type='checkbox'>
+						<span></span>
+						<p class="order-popup-check">Я согласен с условиями <a href="">Публичной оферты</a></p>
+					</label>
+					<label class="yellow-checkbox">
+						<input type='checkbox'>
+						<span></span>
+						<p class="order-popup-check">Хочу получать информацию об акциях и новинках</p>
+					</label>
+				</form>
+			</div>			
+		</div>
+		
+		<div class="catalog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-5 col-5">
+						<div class="catalog-type">
+							<h3>Выберите тип матраса</h3>
+							<ul>
+								<li><a href="">Жёсткие матрасы</a></li>
+								<li><a href="">Мягкие матрасы</a></li>
+								<li><a href="">Недорогие матрасы</a></li>
+								<li><a href="">Кокосовые матрасы</a></li>
+								<li><a href="">Матрасы с латексом</a></li>
+								<li><a href="">Детские матрасы</a></li>
+								<li><a href="">Беспружинные матрасы</a></li>
+								<li><a href="">С эффектом памяти</a></li>
+								<li><a href="">Импортные матрасы</a></li>
+							</ul>
+						</div>
+						<div class="catalog-price">						 
+							<h3 class="catalog-parameter-name">Цена</h3>
+							<div class="catalog-toggle" id="catalog-toggle-price"></div>
+							<div class="catalog-price-slider">
+								<input type="text" id="price-input1" placeholder="от 4 499">
+								<input type="text" id="price-input2" placeholder="до 54 499">
+								<div id="price-slider-range"></div>
+							</div>
+						</div>
+						<div class="catalog-size">
+							<h3 class="catalog-parameter-name">Размер, 
+								<small>см</small>
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-size"></div>
+							<form action="">
+								<select size="1" name="width">
+									<option class="dis" disabled selected>Ширина</option>
+									<option value="150 sm">150 см</option>
+									<option value="180 sm">180 см</option>
+									<option value="200 sm">200 см</option>
+								</select>
+								<select size="1" name="length">
+									<option disabled selected>Длина</option>
+									<option value="180 sm">180 см</option>
+									<option value="200 sm">200 см</option>
+									<option value="220 sm">220 см</option>
+								</select>
+								<a href="" class="catalog-size-nonstandart">Нужен нестандартный размер?</a>
+							</form>
+						</div>
+						<div class="catalog-hardness">
+							<h3 class="catalog-parameter-name">Жесткость
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-hardness"></div>
+							<form action="">
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Мягкая</p>									
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Умеренно-мягкая</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 6 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>									
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Средняя</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 9 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">	
+										<input type='checkbox'>
+										<span></span>
+										<p>Умеренно-жёсткая</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 9 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>								
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Жёсткая</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 9 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="catalog-brand">
+							<h3 class="catalog-parameter-name">Бренд
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-brand"></div>
+							<form action="">
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>100% Natural</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 3 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Infinity</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Умки</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 4 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Kids</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 0 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Fortuna</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Capitals</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 43 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>General</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Angelo Bellanotti</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Metzeler</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Roll</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 6 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Матрас в диван</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="catalog-age">
+							<h3 class="catalog-parameter-name">Возраст
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-age"></div>
+							<form action="">
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Для взрослых</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 1 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Для малышей (0-3)</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Для детей (4-12)</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 1 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Для подростков (13+)</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Для пожилых</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="catalog-spring-block">
+							<h3 class="catalog-parameter-name">Пружинный блок
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-spring-block"></div>
+							<form action="">
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Беспружинный</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 13 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Беспруж-ый сэндвич</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Зависимый блок</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 11 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Независимый блок</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 0 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Блок пружин Infinity</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="catalog-height">						 
+							<h3 class="catalog-parameter-name">Высота
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-height"></div>
+							<div class="catalog-hight-slider">
+								<ul>
+									<li>6</li>
+									<li>16</li>
+									<li>27</li>
+									<li>37</li>
+									<li>47</li>
+								</ul>								
+								<div id="height-slider-range"></div>
+							</div>
+						</div>
+						<div class="catalog-maxweight">						 
+							<h3 class="catalog-parameter-name">Максимальный вес<br> одного спящего
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-maxweight"></div>
+							<div id="catalog-maxweight-slider">
+								<div id="maxweight-custom-handle" class="ui-slider-handle"></div>							
+							</div>
+						</div>
+						<div class="catalog-filling">
+							<h3 class="catalog-parameter-name">Наполнитель
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-filling"></div>
+							<form action="">
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Пенополиуретан</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Кокос иглопробивной</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Кокос латексированый</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Сизаль</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 3 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Конский волос</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 34 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Натуральный латекс</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 42 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Мемори Фоам</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="catalog-other">
+							<h3 class="catalog-parameter-name">Дополнительно
+								<a href="" class="question-mark"></a>
+							</h3>
+							<div class="catalog-toggle" id="catalog-toggle-other"></div>
+							<form action="">
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Со скидкой</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 5 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Популярные</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 3 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Ортопедические</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>В рулоне</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 2 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+								<div class="catalog-checkbox">
+									<label class="yellow-checkbox">
+										<input type='checkbox'>
+										<span></span>
+										<p>Для дивана</p>
+									</label><a href="" class="question-mark"></a>
+									<div class="catalog-popup">
+										Найдено 8 товаров
+										<a href="#">Показать</a>
+										<p>+</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="catalog-find">
+							<button>Подобрать</button>
+							<button class="catalog-find-reset">Сбросить фильтр
+								<span>+</span>
+							</button>
+						</div>
+						<div class="catalog-banner">Баннер</div>
+						<div class="catalog-banner">Баннер</div>
+					</div>
+					<div class="col-lg-9 col-md-8 col-sm-7 col-7">
+						<ul class="breadcrumbs">
+							<li><a href="">Главная</a></li>
+							<li><a href="">Матрасы</a></li>
+							<li>Кокосовые</li>
+						</ul>
+						<h1>Анатомические матрасы фабрики «Матрасбург»</h1>
+						<ul class="catalog-sorting">
+							<li><a href="">Все матрасы</a></li>
+							<li><a href="">Дешевле</a></li>
+							<li><a href="">Со скидкой</a></li>
+							<li><a href="">Дороже</a></li>
+							<li><a href="">Популярные</a></li>
+						</ul>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="catalog-item">
+									<div class="row">
+										<div class="col-7">
+											<div class="catalog-item-discount">-45%</div>
+											<img src="img/mattress-small.jpg" alt="">
+											<div class="catalog-item-youtube">
+												<img src="img/youtube.png" alt="">
+												<p>Видеообзор</p>
+											</div>
+										</div>
+										<div class="col-5">
+											<div class="catalog-item-rating">
+												<ul>
+													<li class="current" style="width: 80%"><span class="star1"></span></li>
+													<li><span class="star2"></span></li>
+													<li><span class="star3"></span></li>
+													<li><span class="star4"></span></li>
+													<li><span class="star5"></span></li>
+												</ul>
+											</div>
+											<a href="" class="catalog-item-feedbacks">24 отзыва</a>
+											<p class="catalog-item-price">16 000 ₽</p>
+											<p class="catalog-item-oldprice">24 000 ₽</p>
+											<button class="catalog-item-order">Быстрый заказ</button>
+											<button class="catalog-item-more">Подробнее</button>
+										</div>
+									</div>
+									<div class="catalog-item-bottom">
+										<h2>Матрас Aspiration<a href="">80 x 190 см</a></h2>
+										<small>Коллекция <a href="">Infinity</a> — матрасы без ограничения по весу</small>
+										<p class="catalog-item-description">- Снимает мышечное напряжение</p>
+										<p class="catalog-item-description">- В составе объемный войлок</p>
+										<p class="catalog-item-description">- Роскошный трикотажный чехол</p>
+										<ul class="catalog-item-property">
+											<li>Высота</li>
+											<li>Нагрузка</li>
+											<li>Жёсткость</li>
+											<li>Гарантия</li>
+											<li>Доставка</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="catalog-item">
+									<div class="row">
+										<div class="col-7">
+											<div class="catalog-item-ribbon">
+												<p>новинка</p>
+											</div>
+											<img src="img/mattress-small.jpg" alt="">	
+										</div>
+										<div class="col-5">
+											<div class="catalog-item-rating">
+												<ul>
+													<li class="current" style="width: 100%"><span class="star1"></span></li>
+													<li><span class="star2"></span></li>
+													<li><span class="star3"></span></li>
+													<li><span class="star4"></span></li>
+													<li><span class="star5"></span></li>
+												</ul>
+											</div>
+											<a href="" class="catalog-item-feedbacks">18 отзывов</a>
+											<p class="catalog-item-price">24 000 ₽</p>
+											<button class="catalog-item-order">Быстрый заказ</button>
+											<button class="catalog-item-more">Подробнее</button>
+										</div>
+									</div>
+									<div class="catalog-item-bottom">
+										<h2>Матрас Aspiration<a href="">80 x 190 см</a></h2>
+										<small>Коллекция <a href="">Infinity</a> — матрасы без ограничения по весу</small>
+										<p class="catalog-item-description">- Снимает мышечное напряжение</p>
+										<p class="catalog-item-description">- В составе объемный войлок</p>
+										<p class="catalog-item-description">- Роскошный трикотажный чехол</p>
+										<ul class="catalog-item-property">
+											<li>Высота</li>
+											<li>Нагрузка</li>
+											<li>Жёсткость</li>
+											<li>Гарантия</li>
+											<li>Доставка</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="catalog-item">
+									<div class="row">
+										<div class="col-7">
+											<div class="catalog-item-ribbon">
+												<p>хит продаж</p>
+											</div>
+											<img src="img/mattress-small.jpg" alt="">
+										</div>
+										<div class="col-5">
+											<div class="catalog-item-rating">
+												<ul>
+													<li class="current" style="width: 60%"><span class="star1"></span></li>
+													<li><span class="star2"></span></li>
+													<li><span class="star3"></span></li>
+													<li><span class="star4"></span></li>
+													<li><span class="star5"></span></li>
+												</ul>
+											</div>
+											<a href="" class="catalog-item-feedbacks">22 отзыва</a>
+											<p class="catalog-item-price">18 000 ₽</p>
+											<button class="catalog-item-order">Быстрый заказ</button>
+											<button class="catalog-item-more">Подробнее</button>
+										</div>
+									</div>
+									<div class="catalog-item-bottom">
+										<h2>Матрас Aspiration<a href="">80 x 190 см</a></h2>
+										<small>Коллекция <a href="">Infinity</a> — матрасы без ограничения по весу</small>
+										<p class="catalog-item-description">- Снимает мышечное напряжение</p>
+										<p class="catalog-item-description">- В составе объемный войлок</p>
+										<p class="catalog-item-description">- Роскошный трикотажный чехол</p>
+										<ul class="catalog-item-property">
+											<li>Высота</li>
+											<li>Нагрузка</li>
+											<li>Жёсткость</li>
+											<li>Гарантия</li>
+											<li>Доставка</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="catalog-item">
+									<div class="row">
+										<div class="col-7">
+											<div class="catalog-item-discount">-45%</div>
+											<div class="catalog-item-flag">
+												<p>Доставка завтра</p>
+											</div>
+											<img src="img/mattress-small.jpg" alt="">
+											<div class="catalog-item-youtube">
+												<img src="img/youtube.png" alt="">
+												<p>Видеообзор</p>
+											</div>
+										</div>
+										<div class="col-5">
+											<div class="catalog-item-rating">
+												<ul>
+													<li class="current" style="width: 80%"><span class="star1"></span></li>
+													<li><span class="star2"></span></li>
+													<li><span class="star3"></span></li>
+													<li><span class="star4"></span></li>
+													<li><span class="star5"></span></li>
+												</ul>
+											</div>
+											<a href="" class="catalog-item-feedbacks">10 отзывов</a>
+											<p class="catalog-item-price">15 000 ₽</p>
+											<p class="catalog-item-oldprice">23 000 ₽</p>
+											<button class="catalog-item-order">Быстрый заказ</button>
+											<button class="catalog-item-more">Подробнее</button>
+										</div>
+									</div>
+									<div class="catalog-item-bottom">
+										<h2>Матрас Aspiration<a href="">80 x 190 см</a></h2>
+										<small>Коллекция <a href="">Infinity</a> — матрасы без ограничения по весу</small>
+										<p class="catalog-item-description">- Снимает мышечное напряжение</p>
+										<p class="catalog-item-description">- В составе объемный войлок</p>
+										<p class="catalog-item-description">- Роскошный трикотажный чехол</p>
+										<ul class="catalog-item-property">
+											<li>Высота</li>
+											<li>Нагрузка</li>
+											<li>Жёсткость</li>
+											<li>Гарантия</li>
+											<li>Доставка</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="catalog-pagination">
+							<li><a class="prevnext" href=""><i class="icon-left"></i>Предыдущая</a></li>
+							<li><a href="">1</a></li>
+							<li><a class="active" href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a class="more" href="">...</a></li>
+							<li><a href="">7</a></li>
+							<li><a class="prevnext" href="">Следующая<i class="icon-right"></i></a></li>
+					    </ul>
+					    <div class="catalog-hardtochoose">
+					    	<h2>Сложно выбрать?</h2>					    	
+					    	<div class="row">
+					    		<div class="col-auto">
+					    			<h3>Перезвоним и проконсультируем</h3>
+					    		</div>
+					    		<div class="col-auto">
+					    			<button>Заказать консультацию</button>
+					    		</div>
+					    	</div>
+					    	<p>Или прочитайте статью от экспертов <a href="">Как выбрать матрас</a></p>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+		<script src="js/plugins/slick/slick.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

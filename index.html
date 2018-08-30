@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../favicon.ico">
+
+		<title>Матрасбург</title>
+
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+
+		<!--шрифты PT Sans, Open Sans-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+		<!--Slick-slider-->
+		<link rel="stylesheet" href="js/plugins/slick/slick-theme.css">
+		<link rel="stylesheet" href="js/plugins/slick/slick.css">
+
+		<link href="css/main.css" rel="stylesheet">			
+
+	</head>
+	
+	<body>
+		<div class="top-nav"><!--...верхняя навигация...-->
+			<div class="container">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-md-auto">
+						<div class="top-nav_city">
+							<a href="">Москва</a>
+						</div>
+					</div>
+					<div class="col-md-auto">
+						<ul class="top-nav_menu">
+							<li><a href="">Магазины</a></li>
+							<li><a href="">Доставка и оплата</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Покупателям</a></li>
+							<li><a href="">Партнёрам</a></li>
+							<li><a href="">Контакты</a></li>
+							<li>
+								<div class="login">
+									<a href="">Вход</a>
+								</div>
+							</li>
+							<li class="registration"><a href="">Регистрация</a></li>
+						</ul>						
+					</div>
+					<i class="icon-menu"></i>
+				</div>				
+			</div>			
+		</div>
+
+		<div class="mobile-top-nav"><!--верхняя навигация, до 420 px-->
+			<div class="container">
+				<div class="row">
+					<div class="col-10">
+						<a href="">
+							<p class="mobile-top-nav-logo">matrasburg</p>
+						</a>
+					</div>
+					<div class="col-2">						
+						<img class="mobile-top-nav-menu-btn" src="img/mobile/menu.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<a href="">
+							<img class="mobile-top-nav-mapmarker" src="img/mobile/mapmarker.png" alt="">
+						</a>
+					</div>
+					<div class="col-2">
+						<a href="">
+							<img class="mobile-top-nav-login" src="img/mobile/login.png" alt="">
+						</a>
+					</div>
+					<div class="col-4">
+						<a href="">
+							<p class="mobile-top-nav-phone">8 800 550 57 53</p>
+						</a>
+					</div>
+					<div class="col-2">						
+						<img class="mobile-top-nav-search" src="img/mobile/search.png" alt="">	
+					</div>
+					<div class="col-2">						
+						<img class="mobile-top-nav-basket" src="img/mobile/basket.png" alt="">
+						<p class="mobile-top-nav-howmuch">2</p>						
+					</div>
+				</div>
+				<ul class="mobile-top-nav-menu">
+					<li><a href="">Магазины</a></li>
+					<li><a href="">Доставка и оплата</a></li>
+					<li><a href="">О компании</a></li>
+					<li><a href="">Покупателям</a></li>
+					<li><a href="">Партнёрам</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Вход</a></li>
+					<li><a href="">Регистрация</a></li>
+				</ul>
+				<form action="" id="mobile-top-nav-searching">
+					<input type="text" placeholder="Поиск">
+					<button>
+						<img src="img/mobile/search.png" alt="">
+					</button>
+				</form>
+				<div class="mobile-top-nav-basket-content">
+					<ul>
+						<li><a href="">Товар 1</a></li>
+						<li><a href="">Товар 2</a></li>
+					</ul>
+					<p>
+						<a href="">Перейти в корзину...</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-menu"> <!--...следующий раздел: логотип, телефон, акции, поиск, корзина...-->
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6 col-sm">
+						<div class="row">
+							<div class="col-sm-auto col-5 logo">
+								<a href=""><img src="img/logo.png" alt=""></a>
+							</div>
+							<div class="col-sm-auto col-7 phone">
+								<p>8 800 550 57 53</p>
+							</div>
+							<div class="col-sm-auto handset">
+								<a href=""><img src="img/handset.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm">
+						<div class="row justify-content-end">
+							<form action="" id="header-menu-searching">
+								<div></div>
+								<input type="text" placeholder="Поиск">
+							</form>
+							<div class="col-sm-auto col-auto percent">
+								<a href=""><img src="img/percent.png" alt=""></a>
+							</div>
+							<div class="col-sm-auto col-auto discounts">
+								<a href="">
+									<p>Акции</p>
+									<p>Скидки</p>
+								</a>
+							</div>
+							<div class="col-sm-auto col-auto lens">
+								<img src="img/lens.png" alt="">
+							</div>
+							<div class="col-sm-auto col-auto search search-active">
+								<p>Поиск товара</p> 
+								<p>по названию</p>
+							</div>
+							<div class="col-sm-auto col-auto basket">
+								<img src="img/basket.png" alt="">
+							</div>
+							<div class="col-sm-auto col-auto how_much">
+								<p>2 товаров</p>
+								<p>12 345 руб.</p>
+							</div>
+							<div class="basket-content">
+								<ul>
+									<li><a href="">Товар 1</a></li>
+									<li><a href="">Товар 2</a></li>
+								</ul>
+								<p>
+									<a href="">Перейти в корзину...</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="mobile-production"><!--навигация по продукции до 420 px-->
+			<div class="container">
+				<h1>Фабрика матрасов Матрасбург производим матрасы с 2001 года</h1>
+				<div class="row">
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>матрасы</p>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>наматрасники</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>подушки</p>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>кровати</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>диваны</p>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>аксессуары</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<a href="">
+							<img src="img/mobile/mattress.png" alt="">
+							<p>товары для детей</p>
+						</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile-actions"><!--слайдер, до 420 px-->
+			<div class="container">
+				<div class="mobile-actions-slider">
+					<div class="mobile-actions-slider-block">
+						<img src="img/mobile/discount.jpg" alt="">
+						<h1>скидка новоселам</h1>
+						<p><span>при заказе</span><br> от 40000 рублей</p>
+						<h2>скидки новоселам</h2>
+					</div>
+					<div class="mobile-actions-slider-block">
+						<img src="img/mobile/discount.jpg" alt="">
+						<h1>скидка новоселам</h1>
+						<p><span>при заказе</span><br> от 40000 рублей</p>
+						<h2>скидки новоселам</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile-delivery"><!--сведения об оплате и доставке, до 420 px-->
+			<div class="container">
+				<h1>Оплата и доставка</h1>
+				<p>Бесплатная доставка по России*</p>
+				<p>Оплата при получении</p>
+				<p>Бесплатный подъем на этаж*</p>
+				<a href="">
+					<p>Подробнее</p>
+					<img src="img/mobile/read-more.png" alt="">
+				</a>				
+			</div>
+			<hr>
+		</div>
+
+		<div class="production-nav"><!--навигация по продукции-->
+			<div class="container">
+				<hr>
+				<div class="production-nav-btn">
+					<h2 class="production-nav-btn-categories">Категории</h2>
+					<div class="production-nav-btn-arrow"></div>
+				</div>
+				<div class="row justify-content-around production-nav-list">
+					<div class="col-sm-auto"><a href="">Матрасы</a></div>
+					<div class="col-sm-auto"><a href="">Наматрасники</a></div>
+					<div class="col-sm-auto"><a href="">Подушки</a></div>
+					<div class="col-sm-auto"><a href="">Кровати и спальни</a></div>
+					<div class="col-sm-auto"><a href="">Диваны</a></div>
+					<div class="col-sm-auto"><a href="">Аксессуары для сна</a></div>
+					<div class="col-sm-auto"><a href="">Товары для детей</a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="choose-mattress"><!--блок с картинкой-->
+			<div class="container">
+				<h1>магазин матрасов и товаров для сна</h1>
+				<p>Производим матрасы с 1961 года</p>
+				<p>Доставляем <span>бесплатно</span> по всей России</p>
+				<a href=""><h2>Выбрать матрас</h2></a>				
+			</div>			
+			<div class="yellow-circle">
+				<div class="arrow"></div>
+			</div>			
+		</div>
+
+		<div class="numbers"><!--числовые данные, статистика-->
+			<div class="container">
+				<div class="row justify-content-around">
+					<div class="col-sm-auto">
+						<h2>57</h2>
+						<p>лет опыта<br> производства<br> матрасов</p>
+					</div>
+					<div class="col-sm-auto">
+						<h2>1 000 000</h2>
+						<p class="numbers-mleft">матрасов изготовили<br> с 1961 года</p>
+					</div>
+					<div class="col-sm-auto">
+						<h2>160</h2>
+						<p class="numbers-mleft">матрасов<br> производим<br> каждый день</p>
+					</div>
+					<div class="col-sm-auto">
+						<h2>72</h2>
+						<p>региональных<br> партнёра</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="collections"><!--наши коллекции-->
+			<div class="container">
+				<h1>Наши коллекции</h1>
+				<div class="row justify-content-around collections-menu">
+					<div class="col-auto"><p id="click-natural">100% Natural</p></div>
+					<div class="col-auto"><p id="click-infinity">Infinity</p></div>
+					<div class="col-auto"><p>Fortuna</p></div>
+					<div class="col-auto"><p>Capitals</p></div>
+					<div class="col-auto"><p>General</p></div>
+					<div class="col-auto"><p>Roll</p></div>
+					<div class="col-auto"><p>Kids</p></div>
+					<div class="col-auto"><p>Умки</p></div>
+				</div>
+				<div class="row justify-content-around collections-window" id="collections-natural">
+					<div class="col-lg-auto col-md-5">
+						<img src="img/mattress.jpg" alt="">
+					</div>
+					<div class="col-lg-auto col-md-7 collections-description">
+						<a href="" class="collections-h">100% Natural </a>
+						<h3> — без ограничений по весу</h3>
+						<div class="collections-guarantee">Гарантия: <small>10 лет</small></div>
+						<p>Мы создали эти матрасы устойчивыми к существенным нагрузкам. 
+						Несущий <a class="collections-yellowlink" href="#">пружинный блок «Infinity»</a> и все материалы 
+						подобраны с учетом их долговечности и износостойкости. 
+						<a class="collections-yellowlink" href="#">Матрасы Infinity</a> способны выдерживать как интенсивные 
+						динамические, так и существенные статические нагрузки и успешно
+						прослужат долгий срок людям любой комплекции и веса.  
+						</p>							
+						<div class="collections-button">
+							<a href="">
+								<p>Выбрать матрас</p>
+							</a>
+							<a class="collections-button-more" href="">Узнать больше о матрасах “Infinity”</a>
+						</div>						
+					</div>
+				</div>
+				<div class="row justify-content-around collections-window" id="collections-infinity">
+					<div class="col-lg-auto col-md-5">
+						<img src="img/mattress.jpg" alt="">
+					</div>
+					<div class="col-lg-auto col-md-7 collections-description">
+						<a href="" class="collections-h">Infinity </a>
+						<h3> — матрасы без ограничений по весу</h3>
+						<div class="collections-guarantee">Гарантия: <small>10 лет</small></div>
+						<p>Мы создали эти матрасы устойчивыми к существенным нагрузкам. 
+						Несущий <a class="collections-yellowlink" href="#">пружинный блок «Infinity»</a> и все материалы 
+						подобраны с учетом их долговечности и износостойкости. 
+						<a class="collections-yellowlink" href="#">Матрасы Infinity</a> способны выдерживать как интенсивные 
+						динамические, так и существенные статические нагрузки и успешно
+						прослужат долгий срок людям любой комплекции и веса.  
+						</p>						
+						<div class="collections-button">
+							<a href="">
+								<p>Выбрать матрас</p>
+							</a>
+							<a class="collections-button-more" href="">Узнать больше о матрасах “Infinity”</a>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="partners"><!--Наши партнеры-->
+			<div class="container">
+				<h1>Наши партнеры</h1>
+				<div class="row justify-content-around">
+					<div class="col-md-auto col-sm-4 col-6">
+						<a href=""><div class="partners-logo">Лого</div></a>
+					</div>
+					<div class="col-md-auto col-sm-4 col-6">
+						<a href=""><div class="partners-logo">Лого</div></a>
+					</div>
+					<div class="col-md-auto col-sm-4 col-6">
+						<a href=""><div class="partners-logo">Лого</div></a>
+					</div>
+					<div class="col-md-auto col-sm-auto col-6">
+						<a href="">
+							<p>и ещё <span>69</span></p>
+							<p class="partners-regcompany">региональных<br> компаний</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popular"><!--Популярные товары-->
+			<div class="container">
+				<h1>Популярные товары</h1>
+				<div class="popular-slider">
+					<div class="popular-slider-block"><!--блок слайдера-->
+						<div class="popular-img">
+							<div class="catalog-item-rating">
+								<ul>
+									<li class="current" style="width: 80%"><span class="star1"></span></li>
+									<li><span class="star2"></span></li>
+									<li><span class="star3"></span></li>
+									<li><span class="star4"></span></li>
+									<li><span class="star5"></span></li>
+								</ul>
+							</div>
+							<a href="" class="catalog-item-feedbacks">24 отзыва</a>
+							<img src="img/mattress-small.jpg" alt="">
+						</div>
+						<div class="popular-description">
+							<h2>Матрас Aspiration</h2>
+							<p class="catalog-item-price">16 000 ₽</p>
+							<p class="catalog-item-oldprice">24 000 ₽</p>
+							<a class="popular-description-collection" href="#">Коллекция <u>Infinity</u></a>
+							<div class="row">
+								<div class="col-auto">
+									<span>Нагрузка</span>
+									<p>140кг</p>
+								</div>
+								<div class="col-auto">
+									<span>Высота</span>
+									<p>18 см</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<span>Жесткость</span>
+									<p>Средняя, ниже средней</p>
+								</div>
+							</div>
+							<a href="" class="white-button">Подробнее</a>
+							<a href="" class="yellow-button">Быстрый заказ</a>
+						</div>
+					</div>
+					<div class="popular-slider-block"><!--блок слайдера-->
+						<div class="popular-img">
+							<div class="catalog-item-rating">
+								<ul>
+									<li class="current" style="width: 80%"><span class="star1"></span></li>
+									<li><span class="star2"></span></li>
+									<li><span class="star3"></span></li>
+									<li><span class="star4"></span></li>
+									<li><span class="star5"></span></li>
+								</ul>
+							</div>
+							<a href="" class="catalog-item-feedbacks">24 отзыва</a>
+							<img src="img/mattress-small.jpg" alt="">
+						</div>
+						<div class="popular-description">
+							<h2>Матрас Aspiration</h2>
+							<p class="catalog-item-price">16 000 ₽</p>
+							<p class="catalog-item-oldprice">24 000 ₽</p>
+							<a class="popular-description-collection" href="#">Коллекция <u>Infinity</u></a>
+							<div class="row">
+								<div class="col-auto">
+									<span>Нагрузка</span>
+									<p>140кг</p>
+								</div>
+								<div class="col-auto">
+									<span>Высота</span>
+									<p>18 см</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<span>Жесткость</span>
+									<p>Средняя, ниже средней</p>
+								</div>
+							</div>
+							<a href="" class="white-button">Подробнее</a>
+							<a href="" class="yellow-button">Быстрый заказ</a>
+						</div>
+					</div>
+					<div class="popular-slider-block"><!--блок слайдера-->
+						<div class="popular-img">
+							<div class="catalog-item-rating">
+								<ul>
+									<li class="current" style="width: 80%"><span class="star1"></span></li>
+									<li><span class="star2"></span></li>
+									<li><span class="star3"></span></li>
+									<li><span class="star4"></span></li>
+									<li><span class="star5"></span></li>
+								</ul>
+							</div>
+							<a href="" class="catalog-item-feedbacks">24 отзыва</a>
+							<img src="img/mattress-small.jpg" alt="">
+						</div>
+						<div class="popular-description">
+							<h2>Матрас Aspiration</h2>
+							<p class="catalog-item-price">16 000 ₽</p>
+							<p class="catalog-item-oldprice">24 000 ₽</p>
+							<a class="popular-description-collection" href="#">Коллекция <u>Infinity</u></a>
+							<div class="row">
+								<div class="col-auto">
+									<span>Нагрузка</span>
+									<p>140кг</p>
+								</div>
+								<div class="col-auto">
+									<span>Высота</span>
+									<p>18 см</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<span>Жесткость</span>
+									<p>Средняя, ниже средней</p>
+								</div>
+							</div>
+							<a href="" class="white-button">Подробнее</a>
+							<a href="" class="yellow-button">Быстрый заказ</a>
+						</div>
+					</div>
+					<div class="popular-slider-block"><!--блок слайдера-->
+						<div class="popular-img">
+							<div class="catalog-item-rating">
+								<ul>
+									<li class="current" style="width: 80%"><span class="star1"></span></li>
+									<li><span class="star2"></span></li>
+									<li><span class="star3"></span></li>
+									<li><span class="star4"></span></li>
+									<li><span class="star5"></span></li>
+								</ul>
+							</div>
+							<a href="" class="catalog-item-feedbacks">24 отзыва</a>
+							<img src="img/mattress-small.jpg" alt="">
+						</div>
+						<div class="popular-description">
+							<h2>Матрас Aspiration</h2>
+							<p class="catalog-item-price">16 000 ₽</p>
+							<p class="catalog-item-oldprice">24 000 ₽</p>
+							<a class="popular-description-collection" href="#">Коллекция <u>Infinity</u></a>
+							<div class="row">
+								<div class="col-auto">
+									<span>Нагрузка</span>
+									<p>140кг</p>
+								</div>
+								<div class="col-auto">
+									<span>Высота</span>
+									<p>18 см</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<span>Жесткость</span>
+									<p>Средняя, ниже средней</p>
+								</div>
+							</div>
+							<a href="" class="white-button">Подробнее</a>
+							<a href="" class="yellow-button">Быстрый заказ</a>
+						</div>
+					</div>
+					<div class="popular-slider-block"><!--блок слайдера-->
+						<div class="popular-img">
+							<div class="catalog-item-rating">
+								<ul>
+									<li class="current" style="width: 80%"><span class="star1"></span></li>
+									<li><span class="star2"></span></li>
+									<li><span class="star3"></span></li>
+									<li><span class="star4"></span></li>
+									<li><span class="star5"></span></li>
+								</ul>
+							</div>
+							<a href="" class="catalog-item-feedbacks">24 отзыва</a>
+							<img src="img/mattress-small.jpg" alt="">
+						</div>
+						<div class="popular-description">
+							<h2>Матрас Aspiration</h2>
+							<p class="catalog-item-price">16 000 ₽</p>
+							<p class="catalog-item-oldprice">24 000 ₽</p>
+							<a class="popular-description-collection" href="#">Коллекция <u>Infinity</u></a>
+							<div class="row">
+								<div class="col-auto">
+									<span>Нагрузка</span>
+									<p>140кг</p>
+								</div>
+								<div class="col-auto">
+									<span>Высота</span>
+									<p>18 см</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-auto">
+									<span>Жесткость</span>
+									<p>Средняя, ниже средней</p>
+								</div>
+							</div>
+							<a href="" class="white-button">Подробнее</a>
+							<a href="" class="yellow-button">Быстрый заказ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="our-actions"><!--Наши акции-->
+			<div class="container">
+				<div class="our-actions-head">
+					<h1>Наши акции</h1>
+				</div>
+				<div class="our-actions-box">
+					<div class="row justify-content-around align-items-center">
+						<div class="col-6 col-sm">
+							<div class="our-actions-box-yellow">
+								<img src="img/delivery.png" alt="">
+							</div>
+							<h2>Бесплатная доставка<br> по всей России</h2>
+							<a href="">Подробнее</a>
+						</div>
+						<div class="col-6 col-sm">
+							<div class="our-actions-box-yellow">
+								<p>20%</p>
+							</div>
+							<h2>Скидка<br> новосёлам</h2>
+							<a href="">Подробнее</a>
+						</div>
+						<div class="col-6 col-sm">
+							<div class="our-actions-box-yellow">
+								<img src="img/truck.png" alt="">
+							</div>
+							<h2>Меняем ваш старый<br> матрас на новый</h2>
+							<a href="">Подробнее</a>
+						</div>
+						<div class="col-6 col-sm">
+							<div class="our-actions-box-yellow">
+								<img src="img/percent.png" alt="">
+							</div>
+							<h2>Все товары<br> со скидками</h2>
+							<a href="">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="feedbacks"><!--Отзывы-->
+			<div class="container">
+				<h1>Отзывы</h1>
+				<div class="feedbacks-slider">
+					<div class="feedbacks-slider-block">						
+						<div class="row align-items-center">
+							<div class="co-md-auto">
+								<img src="img/feedbacks-img.jpg" alt="">
+							</div>
+							<div class="co-md-auto">
+								<a class="feedbacks-vklink" href="#">Ирина Калиниченко</a>
+								<small>Москва, 18 ноя 2015</small>
+							</div>
+						</div>
+						<h3>Матрасы <a class="feedbacks-item" href="">Умки</a> и <a class="feedbacks-item" href="">Infinity Hugs</a><br> Кровать <a class="feedbacks-item" href="">Крона</a></h3>
+						<p>Четыре года назад на рождение первого ребенка нам подарили матрасик "Умки". Отличная вещь - никаких посторонних запахов, жесткий. В итоге решили поменять свой матрас на матрас того же "Матрасбург". Теперь старший прыгает по нашему, а на "Умке" спит младшая. Себе выбрали Infinity Hugs - спится на нем просто шикарно! У мужа тут же прошла спина.</p>
+						<a class="feedbacks-more" href="">Читать полностью</a>						
+					</div>
+					<div class="feedbacks-slider-block">						
+						<div class="row align-items-center">
+							<div class="co-md-auto">
+								<img src="img/feedbacks-img.jpg" alt="">
+							</div>
+							<div class="co-md-auto">
+								<a class="feedbacks-vklink" href="#">Ирина Калиниченко</a>
+								<small>Москва, 18 ноя 2015</small>
+							</div>
+						</div>
+						<h3>Матрасы <a class="feedbacks-item" href="">Умки</a> и <a class="feedbacks-item" href="">Infinity Hugs</a><br> Кровать <a class="feedbacks-item" href="">Крона</a></h3>
+						<p>Четыре года назад на рождение первого ребенка нам подарили матрасик "Умки". Отличная вещь - никаких посторонних запахов, жесткий. В итоге решили поменять свой матрас на матрас того же "Матрасбург". Теперь старший прыгает по нашему, а на "Умке" спит младшая. Себе выбрали Infinity Hugs - спится на нем просто шикарно! У мужа тут же прошла спина.</p>
+						<a class="feedbacks-more" href="">Читать полностью</a>						
+					</div>
+					<div class="feedbacks-slider-block">						
+						<div class="row align-items-center">
+							<div class="co-md-auto">
+								<img src="img/feedbacks-img.jpg" alt="">
+							</div>
+							<div class="co-md-auto">
+								<a class="feedbacks-vklink" href="#">Ирина Калиниченко</a>
+								<small>Москва, 18 ноя 2015</small>
+							</div>
+						</div>
+						<h3>Матрасы <a class="feedbacks-item" href="">Умки</a> и <a class="feedbacks-item" href="">Infinity Hugs</a><br> Кровать <a class="feedbacks-item" href="">Крона</a></h3>
+						<p>Четыре года назад на рождение первого ребенка нам подарили матрасик "Умки". Отличная вещь - никаких посторонних запахов, жесткий. В итоге решили поменять свой матрас на матрас того же "Матрасбург". Теперь старший прыгает по нашему, а на "Умке" спит младшая. Себе выбрали Infinity Hugs - спится на нем просто шикарно! У мужа тут же прошла спина.</p>
+						<a class="feedbacks-more" href="">Читать полностью</a>						
+					</div>
+					<div class="feedbacks-slider-block">						
+						<div class="row align-items-center">
+							<div class="co-md-auto">
+								<img src="img/feedbacks-img.jpg" alt="">
+							</div>
+							<div class="co-md-auto">
+								<a class="feedbacks-vklink" href="#">Ирина Калиниченко</a>
+								<small>Москва, 18 ноя 2015</small>
+							</div>
+						</div>
+						<h3>Матрасы <a class="feedbacks-item" href="">Умки</a> и <a class="feedbacks-item" href="">Infinity Hugs</a><br> Кровать <a class="feedbacks-item" href="">Крона</a></h3>
+						<p>Четыре года назад на рождение первого ребенка нам подарили матрасик "Умки". Отличная вещь - никаких посторонних запахов, жесткий. В итоге решили поменять свой матрас на матрас того же "Матрасбург". Теперь старший прыгает по нашему, а на "Умке" спит младшая. Себе выбрали Infinity Hugs - спится на нем просто шикарно! У мужа тут же прошла спина.</p>
+						<a class="feedbacks-more" href="">Читать полностью</a>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blog"><!--Блог-->
+			<div class="container">
+				<h1>Блог</h1>
+				<div class="row justify-content-around">
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2>Наша компания</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/our-company.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2>Как выбрать матрас</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/how-to-choose.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2 class="blog-longh2">Infinity — выбор влюблённых</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/lovers- choice.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2>Гарантия</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/guarantee.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2 class="blog-longh2">Иглопробивной кокосовый настил</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/coconut-flooring.jpg".jpg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2>Партнёрам</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/to-partners.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2>Полезные советы</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/tips.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<a href="">
+							<div class="blog-grey-cover">
+								<div class="blog-name">
+									<h2>Новости компании</h2>
+								</div>
+								<a href="" class="blog-button">Читать</a>
+							</div>
+							<img src="img/blog/news.jpg" alt="">
+						</a>
+					</div>
+				</div>				
+			</div>
+			<div class="blog-more">
+				<a href="">
+					<p>Все статьи</p>
+					<img src="img/mobile/read-more.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="company"> <!--Компания Матрасбург-->
+			<hr>
+			<div class="container">
+				<h1>Фабрика матрасов Матрасбург</h1>
+				<p>Компания "Матрасбург" уже более 17 лет производит ортопедические матрасы для взрослых и детей. Тщательно продуманная технологическая цепочка и современное оборудование из Европы и Америки позволяет производить продукцию любой сложности и безупречного качества.</p>
+				<p>Ut vitae ligula nulla. Aenean blandit imperdiet justo, non consectetur magna dignissim id. Morbi et sapien id urna iaculis porttitor. Sed auctor, quam a feugiat mollis, massa eros faucibus nisi, et faucibus nunc sem ut risus. Etiam vel pellentesque enim.</p>				
+			</div>
+			<div class="company-more">
+				<a href="">
+					<p>Подробнее</p>
+					<img src="img/mobile/read-more.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="footer-menu"><!--Нижнее меню, с фоном-->
+			<div class="container">
+				<div class="row justify-content-around">
+					<div class="col-auto col-md-2 col-sm-2">
+						<h2>Матрасы</h2>
+						<ul>
+							<li><a href="">Infinity</a></li>
+							<li><a href="">100% Natural</a></li>
+							<li><a href="">Roll</a></li>
+							<li><a href="">Capitals</a></li>
+							<li><a href="">Fortuna</a></li>
+							<li><a href="">Kids</a></li>
+							<li><a href="">Умки</a></li>
+							<li><a href="">Angelo Bellanoti</a></li>
+							<li><a href="">Metzeler</a></li>
+							<li><a href="">Матрас в диван</a></li>
+						</ul>
+					</div>
+					<div class="col-auto col-md-2 col-sm-2">
+						<h2>Кровати</h2>
+						<ul>
+							<li><a href="">Ликвидация кроватей из экокожи</a></li>
+							<li><a href="">Кровати из массива дерева</a></li>
+							<li><a href="">Кроватные основания</a></li>
+						</ul>
+					</div>
+					<div class="col-auto col-md-2 col-sm-2">
+						<h2>Аксессуары </h2>
+					</div>
+					<div class="col-auto col-md-2 col-sm-2">
+						<h2>Покупателям</h2>
+						<ul>
+							<li><a href="">Как оформить заказ</a></li>
+							<li><a href="">Сроки изготовления</a></li>
+							<li><a href="">Отплата и доставка</a></li>
+							<li><a href="">Обмен и возврат</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Правила эксплуатации</a></li>
+							<li><a href="">Умки</a></li>
+							<li><a href="">Архив акций</a></li>
+						</ul>
+					</div>
+					<div class="col-auto col-md-2 col-sm-2">
+						<h2>О компании</h2>
+						<ul>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Наша миссия</a></li>
+						</ul>
+					</div>
+					<div class="col-auto col-md-2 col-sm-2">
+						<h2>Контакты</h2>
+						<ul>
+							<li><a href="">Контакты производителя</a></li>
+							<li><a href="">Адреса магазинов</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy"><!--Футер: копирайт, контакты, лого-->
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-3 col-sm-6 col-5 footer-copy-contacts">
+						<div class="footer-copy-contacts-phone">
+							<img src="img/handset2.png" alt="">
+							<p>8 800 550-57-53</p>
+						</div>
+						<div class="footer-copy-contacts-mail">
+							<img src="img/mail.png" alt="">
+							<p>com@matrasburg.ru</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-7">
+						<p class="footer-copy-copyright">Copyright © Matrasburg 2014 год. Все права защищены.</p>
+					</div>
+					<div class="col-md-3">
+						<a href=""><img class="footer-copy-logo" src="img/logo.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+		<script src="js/plugins/slick/slick.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,729 @@
+//.............страница КАТАЛОГ................
+.catalog
+	background: $catalog-bg
+	padding-top: 50px
+	&-type
+		background: $white
+		padding: 30px 0 25px
+		border: 1px solid #dcdcdc
+		max-width: 215px
+		h3
+			color: $black
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 700
+			text-transform: uppercase
+			margin-left: 30px
+		ul
+			list-style: none
+			padding: 0			
+			margin-top: 10px
+			margin-bottom: 0
+			a
+				color: $light-grey
+				font-family: "PT Sans"
+				font-size: 14px
+				line-height: 26px
+				text-decoration: none
+				display: flex
+				padding-left: 30px
+				&:hover
+					background: darken($white, 10%)
+	&-price
+		background: $white
+		padding: 20px 20px 5px
+		border: 1px solid #dcdcdc
+		max-width: 215px
+		margin-top: 10px
+		position: relative		
+		&-slider
+			margin-bottom: 15px
+		input
+			width: 75px
+			height: 21px
+			outline: none	
+			border-radius: 2px
+			border: 1px solid #a8a8a8
+			margin-bottom: 20px
+			padding-left: 5px
+			color: $grey
+			font-family: "PT Sans"
+			font-size: 12px
+			&:focus
+				-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5)
+				-moz-box-shadow:    0px 0px 1px 0px rgba(50, 50, 50, 0.5)
+				box-shadow:         0px 0px 1px 0px rgba(50, 50, 50, 0.5)
+			&:first-child				
+				margin-right: 10px
+
+	&-parameter-name //заголовки параметров в левом столбце
+		color: $black
+		font-family: "PT Sans"
+		font-size: 14px
+		margin-left: 7px
+		margin-bottom: 15px
+
+	&-toggle //кнопка скрыть-показать
+		width: 8px
+		height: 8px
+		border-right: 2px solid #a8a8a8
+		border-bottom: 2px solid #a8a8a8
+		transform: rotate(225deg)
+		position: absolute
+		top: 22px
+		right: 20px		
+		&:hover
+			cursor: pointer
+			border-right: 2px solid lighten(#a8a8a8, 10%)
+			border-bottom: 2px solid lighten(#a8a8a8, 10%)
+	
+	//поворот стрелки
+	.rotated 
+		transform: rotate(45deg)
+		top: 20px
+
+	//стили UI слайдера	
+	.ui-widget.ui-widget-content 
+		border: 0px #dcdcdc
+		background: #dcdcdc
+		height: 1px
+		margin-bottom: 25px
+	.ui-slider-handle
+		border-radius: 10px
+		border: 2px solid $grey
+		top: -7px
+		outline: none
+		&:hover
+			cursor: pointer
+	.ui-state-active
+		background: $white !important
+	.ui-slider-range
+		background: $yellow
+		height: 3px
+		margin-top: -1px
+
+	&-size
+		background: $white
+		padding: 20px 20px 5px
+		border: 1px solid #dcdcdc
+		max-width: 215px
+		margin-top: -1px
+		position: relative		
+		select
+			color: $grey
+			font-family: "PT Sans"
+			font-size: 12px
+			width: 75px
+			height: 21px
+			outline: none	
+			border-radius: 2px
+			border: 1px solid #a8a8a8
+			background: url(../img/open-arrow.png) no-repeat
+			background-size: 11%
+			background-position: 90% 50%
+			padding-left: 5px
+			margin-bottom: 9px			
+			-webkit-appearance: none
+			-moz-appearance: none	
+			&[name="width"]
+				margin-right: 10px
+			&:hover
+			cursor: pointer		
+		&-nonstandart
+			color: $yellow
+			font-family: "PT Sans"
+			font-size: 12px
+			margin-bottom: 15px
+			display: inline-block
+
+	.question-mark		
+		background: url(../img/question-mark.png) no-repeat
+		background-size: 12px		
+		width: 12px
+		height: 12px
+		display: inline-block
+		text-align: center
+		margin-left: 3px
+		margin-bottom: -1px
+		display: inline-block
+
+	&-hardness, &-brand, &-age, &-spring-block, &-height, 
+	&-maxweight, &-filling, &-other, &-find
+
+		background: $white
+		padding: 20px 15px 5px 20px
+		border: 1px solid #dcdcdc
+		max-width: 215px
+		margin-top: -1px
+		position: relative	
+		form
+			margin-top: -9px
+			margin-bottom: 8px	
+	&-checkbox
+		position: relative
+	label[class="yellow-checkbox"]
+		input
+			display: none
+		span 
+			height: 13px
+			width: 13px
+			border: 1px solid #9a9a9a
+			display: inline-block
+			position: relative
+			background-color: #FFF
+			border-radius: 2px
+			padding: 3px
+			margin-bottom: -1px
+		&:hover
+			cursor: pointer
+		p
+			color: #686868
+			font-family: "PT Sans"
+			font-size: 14px	
+			line-height: 25px
+			display: inline
+			margin-left: -17px
+			padding-left: 19px
+			position: relative
+			z-index: 1
+		[type=checkbox]:checked + span:before
+			content: '\2714'
+			background: $yellow
+			position: absolute
+			top: -1px
+			left: -1px	
+			padding-left: 3px
+			padding-top: 1px		
+			font-size: 9px
+			line-height: 12px
+			width: 13px
+			border-radius: 2px
+			color: $grey
+		
+	.yellow-label
+		color: $yellow !important
+
+	&-popup
+		position: absolute
+		width: 120px
+		height: 70px
+		background: $yellow
+		top: -15px		
+		left: 220px
+		z-index: 1
+		color: $black
+		font-size: 10px
+		font-family: "PT Sans"
+		padding: 13px 0px
+		text-align: center
+		border-radius: 3px
+		display: none
+		&:hover
+			cursor: default
+		&:after
+			content: ''
+			position: absolute
+			right: 120px
+			top: 12px
+			border: 6px solid transparent
+			border-right: 12px solid $yellow
+		a
+			height: 28px
+			width: 86px
+			color: $white
+			font-family: "PT Sans"
+			font-size: 12px
+			line-height: 12px
+			text-decoration: none
+			text-align: center
+			padding: 8px 0
+			background: $grey
+			border-radius: 4px	
+			margin: 7px auto 0
+			display: block
+			&:hover
+				cursor: pointer
+				background: lighten($grey, 3%)
+				transition: 0.2s
+			&:active
+				font-size: 11px
+		p
+			position: absolute !important
+			transform: rotate(45deg)
+			display: inline-block !important
+			color: $black !important
+			font-size: 16px !important
+			top: -4px
+			right: 4px
+			&:hover
+				cursor: pointer
+
+	&-height
+		input
+			display: none
+		ul
+			list-style: none
+			display: flex
+			padding: 0
+			margin-left: -22px
+			margin-right: -22px
+			margin-bottom: -1px
+			li
+				padding: 0 16px
+				color: #686868
+				font-family: "PT Sans"
+				font-size: 12px
+				letter-spacing: -0.4px
+				text-align: center
+				width: 45px
+				&:after
+					content: "|"
+					color: #dcdcdc
+					display: block
+
+	&-maxweight 
+		.ui-state-default, .ui-widget-content .ui-state-default
+			background: $grey
+			font-weight: normal
+			color: #ffffff
+			border: none
+			border-radius: 2px !important
+			width: 30px
+			height: 17px
+			text-align: center
+			font-family: "PT Sans"
+			font-size: 12px
+		.ui-state-active
+			background: $grey !important
+		.ui-widget.ui-widget-content
+			background: #ffb32d
+			height: 3px
+			margin-top: 20px
+			margin-bottom: 20px
+
+	&-find
+		padding: 20px 0 15px
+		text-align: center
+		margin-bottom: 45px
+		button
+			height: 28px
+			width: 126px
+			color: $black
+			font-family: "PT Sans"
+			font-size: 14px
+			background: $yellow
+			outline: none
+			border: none
+			border-radius: 4px			
+			&:hover
+				cursor: pointer
+				background: lighten($yellow, 3%)
+				transition: 0.2s
+			&:active
+				font-size: 13px
+		&-reset
+			background: $white !important
+			width: 140px !important
+			height: 20px !important
+			margin-top: 15px
+		span
+			font-size: 16px
+			transform: rotate(45deg)
+			display: inline-block
+			border: 1px solid black
+			border-radius: 12px
+			padding: 2px
+			line-height: 9px
+			position: relative
+			top: 2px
+			left: 4px
+			height: 15px
+			width: 15px
+
+	&-banner
+		height: 280px
+		width: 215px
+		background: #dadada
+		margin-bottom: 35px
+		text-align: center
+		line-height: 280px
+		font-family: "PT Sans"
+		font-size: 24px
+
+	.col-lg-9
+		padding-left: 10px
+
+	h1
+		font-family: "Open Sans"
+		font-size: 24px
+		margin-top: 8px
+	
+	&-sorting
+		list-style: none
+		padding: 0
+		padding-left: 75px
+		margin: 0
+		margin-top: 20px
+		display: flex
+		background: $white		
+		border: 1px solid #dcdcdc
+
+		li
+			color: #686868
+			font-family: "PT Sans"
+			font-size: 14px			
+			a
+				color: #686868				
+				text-decoration: none
+				padding: 8px 28px
+				display: inline-block
+				&:hover
+					color: $black
+					background: $yellow
+					transition: 0.2s
+
+	&-item
+		width: 362px
+		height: 402px
+		background: $white
+		border: 1px solid #dcdcdc
+		padding-top: 25px
+		margin-top: 22px
+		margin-bottom: 5px
+		&:hover
+			transition: 0.2s
+			box-shadow: 0 10px 21px rgba(0, 0, 0, 0.25)
+			border: none
+		&:hover .catalog-item-bottom
+			transition: 0.2s
+			background: $yellow
+		&:hover small, &:hover small a
+			color: $black
+		.row
+			margin: 0			
+			margin-bottom: 14px
+			padding: 0 30px
+			width: 360px
+			.col-7
+				padding: 0
+				img
+					width: 166px
+					margin-top: 44px
+					margin-bottom: 10px
+			.col-5
+				padding: 0
+		&-youtube
+			height: 22px			
+			text-decoration: none
+			color: $white
+			font-family: "PT Sans"
+			font-size: 10px
+			cursor: pointer
+			img
+				width: 31px !important
+				position: relative
+				z-index: 1
+				margin: 0 !important					
+			p
+				border-radius: 4px
+				background-color: $grey
+				width: 75px
+				height: 16px
+				padding: 1px 0 0 10px
+				display: inline-block
+				position: relative
+				top: -8px
+				left: -7px
+		&-rating
+			ul
+				list-style: none
+				width: 65px
+				height: 10px
+				background: url(../img/rating-star.png)
+				background-size: 13px
+				position: relative
+				padding: 0
+				margin: 0
+				.current
+					background: url(../img/rating-star.png) left bottom
+					background-size: 13px
+					z-index: 1
+				li
+					float: left
+					height: 10px
+					span[class*="star"]
+						position: absolute
+						z-index: 5
+						display: block
+						width: 13px
+						height: 10px
+						cursor: pointer
+						&:hover
+							z-index: 2
+							left: 0
+							background: url(../img/rating-star.png) left bottom
+							background-size: 13px
+					span.star1
+						left: 0
+						&:hover
+							width: 13px
+					span.star2
+						left: 13px
+						&:hover
+							width: 26px
+					span.star3
+						left: 26px
+						&:hover
+							width: 39px
+					span.star4
+						left: 39px
+						&:hover
+							width: 52px
+					span.star5
+						left: 52px
+						&:hover
+							width: 65px
+		&-feedbacks
+			color: #686868
+			text-decoration: none
+			font-family: "PT Sans"
+			font-size: 12px
+			margin-top: -12px
+			margin-right: -2px
+			float: right
+
+		&-price
+			color: $black
+			font-family: "PT Sans"
+			font-size: 24px
+			white-space: nowrap
+			margin-top: 40px
+			margin-left: 31px
+
+		&-oldprice
+			font-family: "PT Sans"
+			font-size: 14px
+			text-decoration: line-through
+			position: absolute
+			top: 30px
+			right: 0
+
+		button
+			height: 28px
+			width: 124px
+			color: $black
+			font-family: "PT Sans"
+			font-size: 12px
+			line-height: 12px
+			background: $yellow
+			outline: none
+			border: none
+			border-radius: 4px	
+			margin-top: 14px
+			margin-left: -3px		
+			&:hover
+				cursor: pointer
+				background: lighten($yellow, 3%)
+				transition: 0.2s
+			&:active
+				font-size: 11px
+			&:last-child
+				background: $white
+				border: 1px solid $grey
+				margin-top: 12px
+
+		&-bottom
+			padding: 16px 30px 0
+			height: 200px
+		h2
+			font-family: "PT Sans"
+			font-size: 18px
+			a
+				color: $black
+				font-size: 12px
+				margin-left: 10px
+		small
+			color: #686868
+			font-family: "PT Sans"
+			font-size: 12px
+			margin-top: 2px			
+			margin-bottom: 8px
+			display: inline-block
+			a
+				color: #686868
+
+		&-description
+			color: $black
+			font-family: "Open Sans"
+			font-size: 13px
+			font-weight: 600			
+			
+		&-property
+			list-style: none
+			display: flex
+			padding: 0
+			margin-top: 18px
+			li
+				color: #000
+				font-family: "PT Sans"
+				font-size: 8px
+				font-weight: 700
+				text-transform: uppercase
+				text-align: center
+				margin-right: 25px
+				&:before
+					content: ''
+					width: 37px
+					height: 37px
+					background: #595858	
+					border-radius: 19px
+					display: inline-block
+					margin-bottom: -25px
+
+		&-discount
+			position: absolute
+			width: 50px
+			height: 50px
+			color: #121212
+			font-family: "PT Sans"
+			font-size: 14px
+			background: url(../img/yellow-flower.png)
+			background-size: 50px
+			padding: 16px 9px
+			top: -38px
+			left: -43px
+
+		&-ribbon
+			position: absolute
+			width: 102px
+			height: 102px			
+			background: url(../img/yellow-ribbon.png)
+			background-size: 102px
+			padding: 16px 9px
+			top: -31px
+			left: -36px
+			p
+				color: #121212
+				font-family: "PT Sans"
+				font-size: 14px
+				text-transform: uppercase
+				transform: rotate(-45deg)
+				margin-top: 18px
+				margin-left: -13px
+				white-space: nowrap
+				text-align: center
+
+		&-flag
+			position: absolute
+			width: 101px
+			height: 35px			
+			background: url(../img/yellow-flag.png)
+			background-size: 101px
+			padding: 16px 9px
+			top: 40px
+			left: -36px
+			p
+				color: #121212
+				font-family: "PT Sans"
+				font-size: 11px
+				line-height: 12px
+				font-weight: 600
+				margin-top: -14px
+				margin-left: 5px
+				width: 55px
+
+	&-pagination
+		list-style: none
+		display: flex
+		width: 400px
+		margin: 0 auto
+		margin-top: 70px
+		padding: 0
+		li
+			font-family: "PT Sans"
+			font-size: 18px
+			line-height: 22px
+			margin: 0 1px			
+			&:first-child
+				font-size: 14px
+				margin-right: 25px
+				i
+					margin-right: 5px
+				a
+					display: contents
+			&:last-child
+				font-size: 14px
+				margin-left: 25px
+				i
+					margin-left: 5px
+				a
+					display: contents
+			a
+				color: $black
+				text-decoration: none
+				text-align: center
+				line-height: 27px
+				display: inline-block
+				width: 27px
+				border-radius: 14px
+				transition: .4s
+				&:hover:not(.active)
+					background: darken($white, 15%)
+			.active
+				background: $yellow	
+			.more:hover
+				background: #f1f1f1 !important
+			.prevnext:hover
+				color: $yellow
+
+	&-hardtochoose
+		background: $white
+		border: 1px solid #dcdcdc
+		margin-top: 50px
+		h2
+			font-family: "PT Sans"
+			font-size: 24px
+			font-weight: 700
+			text-align: center
+			margin-top: 25px
+			margin-bottom: 23px
+		h3
+			font-family: "PT Sans"
+			font-size: 18px
+			font-weight: 700
+			float: left
+		button
+			height: 38px
+			width: 225px
+			color: $black
+			font-family: "PT Sans"
+			font-size: 14px
+			line-height: 14px
+			background: $yellow
+			outline: none
+			border: none
+			border-radius: 4px
+			margin-left: -5px
+			margin-top: -5px		
+			&:hover
+				cursor: pointer
+				background: lighten($yellow, 3%)
+				transition: 0.4s
+			&:active
+				font-size: 13.5px
+		.row
+			margin: 0 auto
+			width: 550px
+			margin-bottom: 26px
+		p
+			font-family: "PT Sans"
+			font-size: 14px
+			text-align: center
+			margin-bottom: 29px
+			a
+				color: $yellow
+				font-weight: 600
+
+
+
+				
